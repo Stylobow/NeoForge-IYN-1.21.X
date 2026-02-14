@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "iyn:topaze_block",
+    "iyn:topaze_ore",
+    "iyn:deepslate_topaze_ore"
+  ]
+}
