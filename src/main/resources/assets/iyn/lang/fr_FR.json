@@ -10,7 +10,9 @@
   "item.iyn.baguette_verte": "Baguette verte",
   "item.iyn.baguette_violette": "Baguette violette",
   "item.iyn.obsidian_ingot": "Lingot d'obsidienne",
+  "item.iyn.topaze": "Topaze",
 
   "block.iyn.topaze_block": "Bloc de topaze",
-  "block.iyn.topaze_ore": "Minerai de topaze"
+  "block.iyn.topaze_ore": "Minerai de topaze",
+  "block.iyn.deepslate_topaze_ore": "Minerai de topaze des abîmes"
 }

@@ -3,7 +3,9 @@ package fr.stylobow.iyn.item;
 import fr.stylobow.iyn.ImagineYourNight;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TridentItem;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -28,7 +30,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().stacksTo(1).durability(2000)));
 
     public static final DeferredItem<Item> OBSIDIAN_INGOT = ITEMS.register("obsidian_ingot",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().fireResistant()));
+    public static final DeferredItem<Item> TOPAZE = ITEMS.register("topaze",
+            () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

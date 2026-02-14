@@ -23,6 +23,7 @@ public static final DeferredRegister<CreativeModeTab>CREATIVE_MODE_TAB =
                     .displayItems((parameters, output) -> {
                         output.accept(ModBlocks.TOPAZE_BLOCK);
                         output.accept(ModBlocks.TOPAZE_ORE);
+                        output.accept(ModBlocks.DEEPSLATE_TOPAZE_ORE);
                     }).build());
 
     public static final Supplier<CreativeModeTab>  IYN_MATERIALS_TAB = CREATIVE_MODE_TAB.register("iyn_materials_tab",
@@ -31,6 +32,7 @@ public static final DeferredRegister<CreativeModeTab>CREATIVE_MODE_TAB =
                     .title(Component.translatable("creative.iyn.materials"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.OBSIDIAN_INGOT);
+                        output.accept(ModItems.TOPAZE);
                     }).build());
 
     public static void register(IEventBus eventBus) {

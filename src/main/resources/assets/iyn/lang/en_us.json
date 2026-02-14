@@ -10,7 +10,9 @@
   "item.iyn.baguette_verte": "Green wand",
   "item.iyn.baguette_violette": "Purple wand",
   "item.iyn.obsidian_ingot": "Obsidian ingot",
+  "item.iyn.topaze": "Topaze",
 
   "block.iyn.topaze_block": "Topaze block",
-  "block.iyn.topaze_ore": "Topaze ore"
+  "block.iyn.topaze_ore": "Topaze ore",
+  "block.iyn.deepslate_topaze_ore": "Deepslate topaze ore"
 }
