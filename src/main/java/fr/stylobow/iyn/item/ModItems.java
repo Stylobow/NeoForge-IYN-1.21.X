@@ -1,6 +1,7 @@
 package fr.stylobow.iyn.item;
 
 import fr.stylobow.iyn.ImagineYourNight;
+import fr.stylobow.iyn.item.custom.BaguetteVioletteItem;
 import fr.stylobow.iyn.item.custom.TournevisItem;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.food.FoodProperties;
@@ -29,7 +30,7 @@ public class ModItems {
     public static final DeferredItem<Item> BAGUETTE_VERTE = ITEMS.register("baguette_verte",
             () -> new Item(new Item.Properties().stacksTo(1).durability(2000)));
     public static final DeferredItem<Item> BAGUETTE_VIOLETTE = ITEMS.register("baguette_violette",
-            () -> new Item(new Item.Properties().stacksTo(1).durability(2000)));
+            () -> new BaguetteVioletteItem(new Item.Properties().stacksTo(1).durability(2000)));
 
     public static final DeferredItem<Item> OBSIDIAN_INGOT = ITEMS.register("obsidian_ingot",
             () -> new Item(new Item.Properties().fireResistant()));
