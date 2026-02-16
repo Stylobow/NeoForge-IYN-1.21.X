@@ -113,6 +113,17 @@ public class ModBlocks {
             )
     );
 
+    public static final DeferredBlock IRON_BLOCK = registerBlock("iron_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.METAL)
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .requiresCorrectToolForDrops()
+                            .strength(3, 3.0F)
+                            .sound(SoundType.METAL)
+            )
+    );
+
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

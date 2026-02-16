@@ -23,19 +23,19 @@ public class ClientConfig {
         builder.push("keystrokes_hud");
 
         showKeystrokes = builder
-                .comment("Afficher ou cacher le HUD")
-                .define("showKeystrokes", true);
+                .comment("Show or hide HUD")
+                .define("showKeystrokes", false);
 
         showCps = builder
-                .comment("Afficher les CPS")
-                .define("showCps", true);
+                .comment("Show CPS")
+                .define("showCps", false);
 
         position = builder
-                .comment("Position du HUD sur l'écran")
-                .defineEnum("position", HudPosition.TOP_LEFT);
+                .comment("HUD Position")
+                .defineEnum("position", HudPosition.BOTTOM_RIGHT);
 
         textColor = builder
-                .comment("Couleur du texte")
+                .comment("Text color")
                 .defineEnum("color", HudColor.WHITE);
 
         builder.pop();

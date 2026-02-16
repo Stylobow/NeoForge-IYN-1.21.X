@@ -37,6 +37,34 @@ public class ModItems {
             () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
     public static final DeferredItem<Item> SAPHIR = ITEMS.register("saphir",
             () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
+    public static final DeferredItem<Item> ADAMANTIUM_FRAGMENT = ITEMS.register("adamantium_fragment",
+            () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
+    public static final DeferredItem<Item> STEEL_STICK = ITEMS.register("steel_stick",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CHOPPE = ITEMS.register("choppe",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> MAILLE = ITEMS.register("maille",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> LIGNITE = ITEMS.register("lignite",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> HOPS = ITEMS.register("hops",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> STONE_STICK = ITEMS.register("stone_stick",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CAFEINE = ITEMS.register("cafeine",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> COLA = ITEMS.register("cola",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CANETTE = ITEMS.register("canette",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TAURINE = ITEMS.register("taurine",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> EMPTY_GLASS = ITEMS.register("empty_glass",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SLATE_ITEM = ITEMS.register("slate_item",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

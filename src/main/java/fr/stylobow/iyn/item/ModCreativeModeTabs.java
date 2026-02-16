@@ -38,9 +38,23 @@ public static final DeferredRegister<CreativeModeTab>CREATIVE_MODE_TAB =
                     .title(Component.translatable("creative.iyn.materials"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.OBSIDIAN_INGOT);
+                        output.accept(ModItems.STEEL_STICK);
+                        output.accept(ModItems.STEEL_INGOT);
                         output.accept(ModItems.RUBIS);
                         output.accept(ModItems.SAPHIR);
                         output.accept(ModItems.TOPAZE);
+                        output.accept(ModItems.CHOPPE);
+                        output.accept(ModItems.MAILLE);
+                        output.accept(ModItems.LIGNITE);
+                        output.accept(ModItems.HOPS);
+                        output.accept(ModItems.STONE_STICK);
+                        output.accept(ModItems.CAFEINE);
+                        output.accept(ModItems.COLA);
+                        output.accept(ModItems.CANETTE);
+                        output.accept(ModItems.TAURINE);
+                        output.accept(ModItems.EMPTY_GLASS);
+                        output.accept(ModItems.SLATE_ITEM);
+                        output.accept(ModItems.ADAMANTIUM_FRAGMENT);
                     }).build());
 
     public static void register(IEventBus eventBus) {
