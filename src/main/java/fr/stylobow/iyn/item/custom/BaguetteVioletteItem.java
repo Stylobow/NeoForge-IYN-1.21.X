@@ -36,7 +36,7 @@ public class BaguetteVioletteItem extends Item {
 
             Vec3 startPos = player.getEyePosition();
             Vec3 lookVec = player.getLookAngle();
-            Vec3 endPos = startPos.add(lookVec.scale(50));
+            Vec3 endPos = startPos.add(lookVec.scale(35));
 
             BlockHitResult blockHit = level.clip(new ClipContext(
                     startPos,
@@ -95,7 +95,7 @@ public class BaguetteVioletteItem extends Item {
             level.playSound(null, player.getX(), player.getY(), player.getZ(),
                     SoundEvents.FIREWORK_ROCKET_LARGE_BLAST, SoundSource.PLAYERS, 1.0f, 1.0f);
 
-            player.getCooldowns().addCooldown(this, 30);
+            player.getCooldowns().addCooldown(this, 120);
 
             ItemStack stack = player.getItemInHand(hand);
             if (player instanceof ServerPlayer serverPlayer) {
