@@ -1,7 +1,9 @@
 package fr.stylobow.iyn.item;
 
 import fr.stylobow.iyn.ImagineYourNight;
+import fr.stylobow.iyn.item.custom.TournevisItem;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TridentItem;
@@ -14,7 +16,7 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ImagineYourNight.MOD_ID);
 
     public static final DeferredItem<Item> TOURNEVIS = ITEMS.register("tournevis",
-            () -> new Item(new Item.Properties().stacksTo(1).durability(2000)));
+            () -> new TournevisItem(new Item.Properties().stacksTo(1).durability(2000)));
 
     public static final DeferredItem<Item> BAGUETTE_BLEUE = ITEMS.register("baguette_bleue",
             () -> new Item(new Item.Properties().stacksTo(1).durability(2000)));
