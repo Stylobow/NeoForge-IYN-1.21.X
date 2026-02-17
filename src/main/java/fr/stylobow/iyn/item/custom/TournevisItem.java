@@ -105,7 +105,7 @@ public class TournevisItem extends Item {
         FireworkExplosion explosion = new FireworkExplosion(
                 FireworkExplosion.Shape.SMALL_BALL,
                 IntList.of(0x00FF00),
-                IntList.of(),
+                IntList.of(0x00AA00),
                 false,
                 false
         );
