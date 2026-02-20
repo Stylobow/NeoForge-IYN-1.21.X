@@ -1,6 +1,7 @@
 package fr.stylobow.iyc.block;
 
 import fr.stylobow.iyc.ImagineYourCraft;
+import fr.stylobow.iyc.block.custom.RainbowBlock;
 import fr.stylobow.iyc.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -155,6 +156,14 @@ public class ModBlocks {
     );
     public static final DeferredBlock<Block> BLACK_IRON_BLOCK = registerBlock("black_iron_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(5.0F, 6.0F).sound(SoundType.METAL))
+    );
+
+    public static final DeferredBlock<Block> RAINBOW_IRON_BLOCK = registerBlock("rainbow_iron_block",
+            () -> new RainbowBlock(BlockBehaviour.Properties.of()
+                    .strength(5.0F, 6.0F)
+                    .sound(SoundType.METAL)
+                    .noOcclusion()
+            )
     );
 
     public static final DeferredBlock<Block> RED_LIGHT = registerBlock("red_light",

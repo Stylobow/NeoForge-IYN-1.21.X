@@ -90,6 +90,7 @@ public static final DeferredRegister<CreativeModeTab>CREATIVE_MODE_TAB =
                         output.accept(ModBlocks.GREEN_IRON_BLOCK);
                         output.accept(ModBlocks.RED_IRON_BLOCK);
                         output.accept(ModBlocks.BLACK_IRON_BLOCK);
+                        output.accept(ModBlocks.RAINBOW_IRON_BLOCK);
                     }).build());
 
     public static void register(IEventBus eventBus) {

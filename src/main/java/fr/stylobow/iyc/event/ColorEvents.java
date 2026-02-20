@@ -6,6 +6,8 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 
+import java.awt.*;
+
 @EventBusSubscriber(modid = "iyc", bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ColorEvents {
 
@@ -45,5 +47,11 @@ public class ColorEvents {
         event.register((stack, tintIndex) -> 0x0A5200, ModBlocks.GREEN_IRON_BLOCK.get());
         event.register((stack, tintIndex) -> 0xBA1818, ModBlocks.RED_IRON_BLOCK.get());
         event.register((stack, tintIndex) -> 0x151515, ModBlocks.BLACK_IRON_BLOCK.get());
+
+        event.register((stack, tintIndex) -> {
+            float hue = (System.currentTimeMillis() % 5000L) / 5000.0f;
+            return Color.HSBtoRGB(hue, 0.8f, 0.8f);
+
+        }, ModBlocks.RAINBOW_IRON_BLOCK.get());
     }
 }
