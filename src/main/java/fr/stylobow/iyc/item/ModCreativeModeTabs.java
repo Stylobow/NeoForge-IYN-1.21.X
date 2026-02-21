@@ -70,11 +70,10 @@ public static final DeferredRegister<CreativeModeTab>CREATIVE_MODE_TAB =
                     }).build());
 
     public static final Supplier<CreativeModeTab>  IYC_COLOR_BLOCKS_TAB = CREATIVE_MODE_TAB.register("iyc_color_blocks_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.LIGHT_BLUE_IRON_BLOCK.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.LIME_REDSTONE_LAMP.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(ImagineYourCraft.MOD_ID, "iyc_blocks_tab"))
                     .title(Component.translatable("creative.iyc.color_blocks"))
                     .displayItems((parameters, output) -> {
-                        output.accept(ModBlocks.RED_LIGHT);
                         output.accept(ModBlocks.ORANGE_IRON_BLOCK);
                         output.accept(ModBlocks.MAGENTA_IRON_BLOCK);
                         output.accept(ModBlocks.LIGHT_BLUE_IRON_BLOCK);
@@ -91,6 +90,36 @@ public static final DeferredRegister<CreativeModeTab>CREATIVE_MODE_TAB =
                         output.accept(ModBlocks.RED_IRON_BLOCK);
                         output.accept(ModBlocks.BLACK_IRON_BLOCK);
                         output.accept(ModBlocks.RAINBOW_IRON_BLOCK);
+                        output.accept(ModBlocks.ORANGE_LIGHT);
+                        output.accept(ModBlocks.MAGENTA_LIGHT);
+                        output.accept(ModBlocks.LIGHT_BLUE_LIGHT);
+                        output.accept(ModBlocks.YELLOW_LIGHT);
+                        output.accept(ModBlocks.LIME_LIGHT);
+                        output.accept(ModBlocks.PINK_LIGHT);
+                        output.accept(ModBlocks.GRAY_LIGHT);
+                        output.accept(ModBlocks.LIGHT_GRAY_LIGHT);
+                        output.accept(ModBlocks.CYAN_LIGHT);
+                        output.accept(ModBlocks.PURPLE_LIGHT);
+                        output.accept(ModBlocks.BLUE_LIGHT);
+                        output.accept(ModBlocks.BROWN_LIGHT);
+                        output.accept(ModBlocks.GREEN_LIGHT);
+                        output.accept(ModBlocks.RED_LIGHT);
+                        output.accept(ModBlocks.BLACK_LIGHT);
+                        output.accept(ModBlocks.ORANGE_SAND);
+                        output.accept(ModBlocks.MAGENTA_SAND);
+                        output.accept(ModBlocks.LIGHT_BLUE_SAND);
+                        output.accept(ModBlocks.YELLOW_SAND);
+                        output.accept(ModBlocks.LIME_SAND);
+                        output.accept(ModBlocks.PINK_SAND);
+                        output.accept(ModBlocks.GRAY_SAND);
+                        output.accept(ModBlocks.LIGHT_GRAY_SAND);
+                        output.accept(ModBlocks.CYAN_SAND);
+                        output.accept(ModBlocks.PURPLE_SAND);
+                        output.accept(ModBlocks.BLUE_SAND);
+                        output.accept(ModBlocks.BROWN_SAND);
+                        output.accept(ModBlocks.GREEN_SAND);
+                        output.accept(ModBlocks.RED_SAND);
+                        output.accept(ModBlocks.BLACK_SAND);
                         output.accept(ModBlocks.ORANGE_REDSTONE_LAMP);
                         output.accept(ModBlocks.MAGENTA_REDSTONE_LAMP);
                         output.accept(ModBlocks.LIGHT_BLUE_REDSTONE_LAMP);

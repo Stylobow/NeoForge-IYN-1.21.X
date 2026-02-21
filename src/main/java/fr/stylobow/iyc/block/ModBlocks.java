@@ -1,13 +1,21 @@
 package fr.stylobow.iyc.block;
 
+import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
 import fr.stylobow.iyc.ImagineYourCraft;
 import fr.stylobow.iyc.block.custom.RainbowBlock;
+import fr.stylobow.iyc.event.ColorEvents;
 import fr.stylobow.iyc.item.ModItems;
+import net.minecraft.core.BlockPos;
+import net.minecraft.util.ColorRGBA;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
@@ -112,15 +120,6 @@ public class ModBlocks {
             )
     );
 
-    public static final DeferredBlock<Block> RED_LIGHT = registerBlock("red_light",
-            () -> new RedstoneLampBlock(BlockBehaviour.Properties.of()
-                    .strength(2.5F)
-                    .sound(SoundType.METAL)
-                    .lightLevel(state -> state.getValue(RedstoneLampBlock.LIT) ? 15 : 0)
-                    .requiresCorrectToolForDrops()
-            )
-    );
-
     private static BlockBehaviour.Properties getIronBlockProperties() {
         return BlockBehaviour.Properties.of()
                 .strength(5.0F)
@@ -151,6 +150,30 @@ public class ModBlocks {
             )
     );
 
+    private static BlockBehaviour.Properties getColorLightProperties() {
+        return BlockBehaviour.Properties.of()
+                .strength(5.0F)
+                .sound(SoundType.METAL)
+                .lightLevel(state -> state.getValue(RedstoneLampBlock.LIT) ? 15 : 0)
+                .requiresCorrectToolForDrops();
+    }
+
+    public static final DeferredBlock<Block> ORANGE_LIGHT = registerBlock("orange_light", () -> new RedstoneLampBlock(getColorLightProperties()));
+    public static final DeferredBlock<Block> MAGENTA_LIGHT = registerBlock("magenta_light", () -> new RedstoneLampBlock(getColorLightProperties()));
+    public static final DeferredBlock<Block> LIGHT_BLUE_LIGHT = registerBlock("light_blue_light", () -> new RedstoneLampBlock(getColorLightProperties()));
+    public static final DeferredBlock<Block> YELLOW_LIGHT = registerBlock("yellow_light", () -> new RedstoneLampBlock(getColorLightProperties()));
+    public static final DeferredBlock<Block> LIME_LIGHT = registerBlock("lime_light", () -> new RedstoneLampBlock(getColorLightProperties()));
+    public static final DeferredBlock<Block> PINK_LIGHT = registerBlock("pink_light", () -> new RedstoneLampBlock(getColorLightProperties()));
+    public static final DeferredBlock<Block> GRAY_LIGHT = registerBlock("gray_light", () -> new RedstoneLampBlock(getColorLightProperties()));
+    public static final DeferredBlock<Block> LIGHT_GRAY_LIGHT = registerBlock("light_gray_light", () -> new RedstoneLampBlock(getColorLightProperties()));
+    public static final DeferredBlock<Block> CYAN_LIGHT = registerBlock("cyan_light", () -> new RedstoneLampBlock(getColorLightProperties()));
+    public static final DeferredBlock<Block> PURPLE_LIGHT = registerBlock("purple_light", () -> new RedstoneLampBlock(getColorLightProperties()));
+    public static final DeferredBlock<Block> BLUE_LIGHT = registerBlock("blue_light", () -> new RedstoneLampBlock(getColorLightProperties()));
+    public static final DeferredBlock<Block> BROWN_LIGHT = registerBlock("brown_light", () -> new RedstoneLampBlock(getColorLightProperties()));
+    public static final DeferredBlock<Block> GREEN_LIGHT = registerBlock("green_light", () -> new RedstoneLampBlock(getColorLightProperties()));
+    public static final DeferredBlock<Block> RED_LIGHT = registerBlock("red_light", () -> new RedstoneLampBlock(getColorLightProperties()));
+    public static final DeferredBlock<Block> BLACK_LIGHT = registerBlock("black_light", () -> new RedstoneLampBlock(getColorLightProperties()));
+
     private static BlockBehaviour.Properties getRedstoneLampProperties() {
         return BlockBehaviour.Properties.of()
                 .strength(0.3F)
@@ -174,6 +197,28 @@ public class ModBlocks {
     public static final DeferredBlock<Block> RED_REDSTONE_LAMP = registerBlock("red_redstone_lamp", () -> new RedstoneLampBlock(getRedstoneLampProperties()));
     public static final DeferredBlock<Block> BLACK_REDSTONE_LAMP = registerBlock("black_redstone_lamp", () -> new RedstoneLampBlock(getRedstoneLampProperties()));
 
+    private static BlockBehaviour.Properties getSandProperties() {
+        return BlockBehaviour.Properties.of()
+                .mapColor(MapColor.SAND)
+                .strength(0.5F)
+                .sound(SoundType.SAND);
+    }
+
+    public static final DeferredBlock<Block> ORANGE_SAND = registerBlock("orange_sand", () -> new ColoredSandBlock(ColorEvents.C_ORANGE, getSandProperties()));
+    public static final DeferredBlock<Block> MAGENTA_SAND = registerBlock("magenta_sand", () -> new ColoredSandBlock(ColorEvents.C_MAGENTA, getSandProperties()));
+    public static final DeferredBlock<Block> LIGHT_BLUE_SAND = registerBlock("light_blue_sand", () -> new ColoredSandBlock(ColorEvents.C_LIGHT_BLUE, getSandProperties()));
+    public static final DeferredBlock<Block> YELLOW_SAND = registerBlock("yellow_sand", () -> new ColoredSandBlock(ColorEvents.C_YELLOW, getSandProperties()));
+    public static final DeferredBlock<Block> LIME_SAND = registerBlock("lime_sand", () -> new ColoredSandBlock(ColorEvents.C_LIME, getSandProperties()));
+    public static final DeferredBlock<Block> PINK_SAND = registerBlock("pink_sand", () -> new ColoredSandBlock(ColorEvents.C_PINK, getSandProperties()));
+    public static final DeferredBlock<Block> GRAY_SAND = registerBlock("gray_sand", () -> new ColoredSandBlock(ColorEvents.C_GRAY, getSandProperties()));
+    public static final DeferredBlock<Block> LIGHT_GRAY_SAND = registerBlock("light_gray_sand", () -> new ColoredSandBlock(ColorEvents.C_LIGHT_GRAY, getSandProperties()));
+    public static final DeferredBlock<Block> CYAN_SAND = registerBlock("cyan_sand", () -> new ColoredSandBlock(ColorEvents.C_CYAN, getSandProperties()));
+    public static final DeferredBlock<Block> PURPLE_SAND = registerBlock("purple_sand", () -> new ColoredSandBlock(ColorEvents.C_PURPLE, getSandProperties()));
+    public static final DeferredBlock<Block> BLUE_SAND = registerBlock("blue_sand", () -> new ColoredSandBlock(ColorEvents.C_BLUE, getSandProperties()));
+    public static final DeferredBlock<Block> BROWN_SAND = registerBlock("brown_sand", () -> new ColoredSandBlock(ColorEvents.C_BROWN, getSandProperties()));
+    public static final DeferredBlock<Block> GREEN_SAND = registerBlock("green_sand", () -> new ColoredSandBlock(ColorEvents.C_GREEN, getSandProperties()));
+    public static final DeferredBlock<Block> RED_SAND = registerBlock("red_sand", () -> new ColoredSandBlock(ColorEvents.C_RED, getSandProperties()));
+    public static final DeferredBlock<Block> BLACK_SAND = registerBlock("black_sand", () -> new ColoredSandBlock(ColorEvents.C_BLACK, getSandProperties()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
@@ -187,5 +232,32 @@ public class ModBlocks {
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
+    }
+
+    public static class ColoredSandBlock extends FallingBlock {
+
+        public static final MapCodec<ColoredSandBlock> CODEC = RecordCodecBuilder.mapCodec(instance ->
+                instance.group(
+                        Codec.INT.fieldOf("dust_color").forGetter(block -> block.dustColor),
+                        propertiesCodec()
+                ).apply(instance, ColoredSandBlock::new)
+        );
+
+        private final int dustColor;
+
+        public ColoredSandBlock(int dustColor, Properties properties) {
+            super(properties);
+            this.dustColor = dustColor;
+        }
+
+        @Override
+        protected MapCodec<? extends FallingBlock> codec() {
+            return CODEC;
+        }
+
+        @Override
+        public int getDustColor(BlockState state, BlockGetter level, BlockPos pos) {
+            return this.dustColor;
+        }
     }
 }
