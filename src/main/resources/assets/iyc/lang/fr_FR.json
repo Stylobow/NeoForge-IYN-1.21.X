@@ -22,6 +22,13 @@
   "iyc.position.bottom_left": "Bas Gauche",
   "iyc.position.bottom_right": "Bas Droite",
 
+  "iyc.music.title": "Musique",
+  "iyc.music.disclaimer": "Ces musiques n'appartiennent pas au mod, il s'agit d'un flux audio web public.",
+  "iyc.music.stop": "Arrêter",
+  "iyc.music.volume": "Volume: %s%%",
+  "iyc.music.done": "Terminé",
+  "iyc.music.hotmix": "Hits Non-Stop",
+
   "creative.iyc.blocks": "Blocs d'IYC",
   "creative.iyc.materials": "Matières premières d'IYC",
   "creative.iyc.color_blocks": "Blocs colorés d'IYC",
