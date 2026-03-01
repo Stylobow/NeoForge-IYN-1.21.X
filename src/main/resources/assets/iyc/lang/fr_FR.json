@@ -21,6 +21,13 @@
   "iyc.position.top_right": "Haut Droite",
   "iyc.position.bottom_left": "Bas Gauche",
   "iyc.position.bottom_right": "Bas Droite",
+  "iyc.button.change_skin": "Changer de skin",
+  "iyc.button.reset_skin": "Réinitialiser le skin",
+  "iyc.button.change_cape": "Changer de cape",
+  "iyc.button.reset_cape": "Réinitialiser la cape",
+  "iyc.error.format": "Format invalide (%s) !",
+  "iyc.error.corrupt": "Fichier image corrompu !",
+
 
   "iyc.music.title": "Musique",
   "iyc.music.disclaimer": "Ces musiques n'appartiennent pas au mod, il s'agit d'un flux audio web public.",

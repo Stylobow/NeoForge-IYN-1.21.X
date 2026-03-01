@@ -17,7 +17,6 @@ import java.io.File;
 
 public class CustomScreen extends Screen {
 
-    private Button skinButton;
     private String errorMessage = "";
 
     public CustomScreen(Component title) {
@@ -30,7 +29,7 @@ public class CustomScreen extends Screen {
         this.errorMessage = "";
 
         int centerX = this.width / 2;
-        int startY = 60;
+        int startY = 40;
         int btnW = 150;
         int btnH = 20;
 
@@ -68,29 +67,33 @@ public class CustomScreen extends Screen {
                 .bounds(centerX - btnW / 2, startY + 50, btnW, btnH)
                 .build());
 
-        this.skinButton = Button.builder(
-                        getSkinText(),
-                        (btn) -> {
-                            openFileChooser();
-                        })
-                .bounds(centerX - btnW / 2, startY + 75, btnW, btnH)
-                .build();
-        this.addRenderableWidget(this.skinButton);
+        this.addRenderableWidget(Button.builder(Component.translatable("iyc.button.change_skin"), (btn) -> openFileChooser(false))
+                .bounds(centerX - btnW / 2, startY + 75, btnW, btnH).build());
+
+        this.addRenderableWidget(Button.builder(Component.translatable("iyc.button.reset_skin"), (btn) -> fr.stylobow.iyc.client.skin.CustomSkinManager.resetSkin())
+                .bounds(centerX - btnW / 2, startY + 100, btnW, btnH).build());
+
+        this.addRenderableWidget(Button.builder(Component.translatable("iyc.button.change_cape"), (btn) -> {openFileChooser(true);})
+                .bounds(centerX - btnW / 2, startY + 125, btnW, btnH).build());
+
+        this.addRenderableWidget(Button.builder(Component.translatable("iyc.button.reset_cape"), (btn) -> fr.stylobow.iyc.client.skin.CustomSkinManager.resetCape())
+                .bounds(centerX - btnW / 2, startY + 150, btnW, btnH).build());
 
         this.addRenderableWidget(Button.builder(Component.translatable("iyc.menu.back"), (btn) -> this.onClose())
-                .bounds(centerX - 100, this.height - 29, 200, 20)
-                .build());
+                .bounds(centerX - 100, this.height - 29, 200, 20).build());
     }
 
-    private void openFileChooser() {
+    private void openFileChooser(boolean isCape) {
         new Thread(() -> {
             try (MemoryStack stack = MemoryStack.stackPush()) {
                 PointerBuffer filters = stack.mallocPointer(1);
                 filters.put(stack.UTF8("*.png"));
                 filters.flip();
 
+                String title = isCape ? "Choose a Cape (.png)" : "Choose a skin (.png)";
+
                 String result = TinyFileDialogs.tinyfd_openFileDialog(
-                        "Choose a skin (.png)",
+                        title,
                         "",
                         filters,
                         "Images PNG",
@@ -107,11 +110,11 @@ public class CustomScreen extends Screen {
                         int h = bimg.getHeight();
 
                         boolean isValidWidth = (w > 0 && w % 64 == 0);
-                        boolean isValidHeight = (h == w || h == w / 2);
+                        boolean isValidHeight = isCape ? (h == w / 2) : (h == w || h == w / 2);
 
                         if (!isValidWidth || !isValidHeight) {
                             if (this.minecraft != null) {
-                                this.minecraft.execute(() -> this.errorMessage = "Invalid format (" + w + "x" + h + ") !");
+                                this.minecraft.execute(() -> this.errorMessage = "Invalid Format (" + w + "x" + h + ") !");
                             }
                             return;
                         }
@@ -122,14 +125,21 @@ public class CustomScreen extends Screen {
                         return;
                     }
 
-                    IYCConfig.data.customSkinPath = result;
+                    if (isCape) {
+                        IYCConfig.data.customCapePath = result;
+                    } else {
+                        IYCConfig.data.customSkinPath = result;
+                    }
                     IYCConfig.save();
 
                     if (this.minecraft != null) {
                         this.minecraft.execute(() -> {
                             this.errorMessage = "";
-                            this.skinButton.setMessage(getSkinText());
-                            fr.stylobow.iyc.client.skin.CustomSkinManager.applySkin();
+                            if (isCape) {
+                                fr.stylobow.iyc.client.skin.CustomSkinManager.applyCape();
+                            } else {
+                                fr.stylobow.iyc.client.skin.CustomSkinManager.applySkin();
+                            }
                         });
                     }
                 }
@@ -155,20 +165,6 @@ public class CustomScreen extends Screen {
         return Component.translatable("iyc.hud.color", Component.translatable(colorKey));
     }
 
-    private Component getSkinText() {
-        String path = IYCConfig.data.customSkinPath;
-        if (path == null || path.isEmpty()) {
-            return Component.literal("Skin: Défaut");
-        } else {
-            File file = new File(path);
-            String name = file.getName();
-            if (name.toLowerCase().endsWith(".png")) {
-                name = name.substring(0, name.length() - 4);
-            }
-            return Component.literal("Skin: " + name);
-        }
-    }
-
     @Override
     public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
         this.renderBackground(guiGraphics, mouseX, mouseY, partialTick);
@@ -184,12 +180,10 @@ public class CustomScreen extends Screen {
 
         if (this.minecraft != null && this.minecraft.player != null) {
             int scale = 50;
-
             int boxLeft = posX - 50;
             int boxTop = posY - 110;
             int boxRight = posX + 50;
             int boxBottom = posY + 20;
-
             float yOffset = 0.0625f;
 
             InventoryScreen.renderEntityInInventoryFollowsMouse(

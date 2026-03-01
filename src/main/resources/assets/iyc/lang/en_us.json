@@ -21,6 +21,12 @@
   "iyc.position.top_right": "Top Right",
   "iyc.position.bottom_left": "Bottom Left",
   "iyc.position.bottom_right": "Bottom Right",
+  "iyc.button.change_skin": "Change Skin",
+  "iyc.button.reset_skin": "Reset Skin",
+  "iyc.button.change_cape": "Change Cape",
+  "iyc.button.reset_cape": "Reset Cape",
+  "iyc.error.format": "Invalid Format (%s)!",
+  "iyc.error.corrupt": "Corrupted image file!",
 
   "iyc.music.title": "Music",
   "iyc.music.disclaimer": "This music does not belong to the mod, it is a public web audio stream.",

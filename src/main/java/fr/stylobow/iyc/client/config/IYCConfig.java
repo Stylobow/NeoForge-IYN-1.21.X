@@ -72,5 +72,6 @@ public class IYCConfig {
         public HudPosition keystrokesPosition = HudPosition.BOTTOM_RIGHT;
         public HudColor keystrokesColor = HudColor.WHITE;
         public String customSkinPath = "";
+        public String customCapePath = "";
     }
 }
