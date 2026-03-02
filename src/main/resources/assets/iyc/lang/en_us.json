@@ -156,6 +156,12 @@
   "block.iyc.saphir_block": "Saphir block",
   "block.iyc.saphir_ore": "Saphir ore",
   "block.iyc.deepslate_saphir_ore": "Deepslate saphir ore",
+  "block.iyc.lignite_block": "Lignite block",
+  "block.iyc.lignite_ore": "Lignite ore",
+  "block.iyc.steel_block": "Steel block",
+  "block.iyc.massive_obsidian_block": "Massive obsidian block",
+  "block.iyc.slate_block": "Slate block",
+  "block.iyc.adamantium_block": "Adamantium block",
 
   "subtitles.iyc.take_back_night": "CaptainSparklez - Take Back The Night",
   "item.iyc.take_back_night.desc": "CaptainSparklez - Take Back The Night",

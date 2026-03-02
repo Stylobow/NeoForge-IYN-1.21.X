@@ -65,7 +65,7 @@ public class ModBlocks {
                     .explosionResistance(6f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)
-                    .mapColor(MapColor.COLOR_ORANGE)
+                    .mapColor(MapColor.COLOR_RED)
                     .instrument(NoteBlockInstrument.IRON_XYLOPHONE))
     );
     public static final DeferredBlock<Block> RUBIS_ORE = registerBlock("rubis_ore",
@@ -96,7 +96,7 @@ public class ModBlocks {
                     .explosionResistance(6f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)
-                    .mapColor(MapColor.COLOR_ORANGE)
+                    .mapColor(MapColor.COLOR_LIGHT_BLUE)
                     .instrument(NoteBlockInstrument.IRON_XYLOPHONE))
     );
     public static final DeferredBlock<Block> SAPHIR_ORE = registerBlock("saphir_ore",
@@ -121,14 +121,73 @@ public class ModBlocks {
             )
     );
 
+    public static final DeferredBlock<Block> LIGNITE_BLOCK = registerBlock("lignite_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(5f)
+                    .explosionResistance(6f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)
+                    .mapColor(MapColor.COLOR_GRAY)
+                    .instrument(NoteBlockInstrument.IRON_XYLOPHONE))
+    );
+    public static final DeferredBlock<Block> LIGNITE_ORE = registerBlock("lignite_ore",
+            () -> new DropExperienceBlock(
+                    UniformInt.of(3, 7),
+                    BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.STONE)
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .requiresCorrectToolForDrops()
+                            .strength(3.0F, 3.0F)
+            )
+    );
+
+    public static final DeferredBlock<Block> STEEL_BLOCK = registerBlock("steel_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(5f)
+                    .explosionResistance(6f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)
+                    .mapColor(MapColor.COLOR_GRAY)
+                    .instrument(NoteBlockInstrument.IRON_XYLOPHONE))
+    );
+    public static final DeferredBlock<Block> MASSIVE_OBSIDIAN_BLOCK = registerBlock("massive_obsidian_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(5f)
+                    .explosionResistance(6f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)
+                    .mapColor(MapColor.COLOR_GRAY)
+                    .instrument(NoteBlockInstrument.IRON_XYLOPHONE))
+    );
+
+    public static final DeferredBlock<Block> SLATE_BLOCK = registerBlock("slate_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(5f)
+                    .explosionResistance(6f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)
+                    .mapColor(MapColor.COLOR_GRAY)
+                    .instrument(NoteBlockInstrument.IRON_XYLOPHONE))
+    );
+
+    public static final DeferredBlock<Block> ADAMANTIUM_BLOCK = registerBlock("adamantium_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(5f)
+                    .explosionResistance(6f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)
+                    .mapColor(MapColor.COLOR_GRAY)
+                    .instrument(NoteBlockInstrument.IRON_XYLOPHONE))
+    );
+
+    public static final DeferredBlock<Block> IRON_LADDER = registerBlock("iron_ladder", () -> new IronLadderBlock(BlockBehaviour.Properties.of().noCollission().strength(2.0F).sound(SoundType.METAL).noOcclusion()));
+
     private static BlockBehaviour.Properties getIronBlockProperties() {
         return BlockBehaviour.Properties.of()
                 .strength(5.0F)
                 .explosionResistance(6.0F)
                 .sound(SoundType.METAL);
     }
-
-    public static final DeferredBlock<Block> IRON_LADDER = registerBlock("iron_ladder", () -> new IronLadderBlock(BlockBehaviour.Properties.of().noCollission().strength(2.0F).sound(SoundType.METAL).noOcclusion()));
 
     public static final DeferredBlock<Block> ORANGE_IRON_BLOCK = registerBlock("orange_iron_block", () -> new Block(getIronBlockProperties()));
     public static final DeferredBlock<Block> MAGENTA_IRON_BLOCK = registerBlock("magenta_iron_block", () -> new Block(getIronBlockProperties()));

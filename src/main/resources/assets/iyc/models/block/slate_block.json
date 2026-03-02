@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "iyc:block/slate_block",
+    "particle": "iyc:block/slate_block"
+  },
+  "render_type": "solid"
+}

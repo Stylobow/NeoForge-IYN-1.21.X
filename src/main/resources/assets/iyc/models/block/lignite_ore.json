@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "iyc:block/lignite_ore",
+    "particle": "iyc:block/lignite_ore"
+  },
+  "render_type": "solid"
+}

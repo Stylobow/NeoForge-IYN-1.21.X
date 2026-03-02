@@ -28,7 +28,6 @@
   "iyc.error.format": "Format invalide (%s) !",
   "iyc.error.corrupt": "Fichier image corrompu !",
 
-
   "iyc.music.title": "Musique",
   "iyc.music.disclaimer": "Ces musiques n'appartiennent pas au mod, il s'agit d'un flux audio web public.",
   "iyc.music.stop": "Arrêter",
@@ -157,6 +156,12 @@
   "block.iyc.saphir_block": "Bloc de saphir",
   "block.iyc.saphir_ore": "Minerai de saphir",
   "block.iyc.deepslate_saphir_ore": "Minerai de saphir des abîmes",
+  "block.iyc.lignite_block": "Bloc de lignite",
+  "block.iyc.lignite_ore": "Minerai de lignite",
+  "block.iyc.steel_block": "Bloc d'acier",
+  "block.iyc.massive_obsidian_block": "Bloc massif d'obsidienne",
+  "block.iyc.slate_block": "Bloc d'ardoise",
+  "block.iyc.adamantium_block": "Bloc d'adamantium",
 
   "subtitles.iyc.take_back_night": "CaptainSparklez - Take Back The Night",
   "item.iyc.take_back_night.desc": "CaptainSparklez - Take Back The Night",

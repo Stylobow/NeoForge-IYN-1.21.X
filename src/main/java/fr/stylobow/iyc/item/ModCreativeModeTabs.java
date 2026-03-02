@@ -31,6 +31,12 @@ public static final DeferredRegister<CreativeModeTab>CREATIVE_MODE_TAB =
                         output.accept(ModBlocks.DEEPSLATE_TOPAZE_ORE);
                         output.accept(ModBlocks.DEEPSLATE_SAPHIR_ORE);
                         output.accept(ModBlocks.IRON_LADDER);
+                        output.accept(ModBlocks.LIGNITE_BLOCK);
+                        output.accept(ModBlocks.LIGNITE_ORE);
+                        output.accept(ModBlocks.STEEL_BLOCK);
+                        output.accept(ModBlocks.MASSIVE_OBSIDIAN_BLOCK);
+                        output.accept(ModBlocks.SLATE_BLOCK);
+                        output.accept(ModBlocks.ADAMANTIUM_BLOCK);
                     }).build());
 
     public static final Supplier<CreativeModeTab>  IYC_MATERIALS_TAB = CREATIVE_MODE_TAB.register("iyc_materials_tab",
