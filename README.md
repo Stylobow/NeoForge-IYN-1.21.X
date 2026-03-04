@@ -15,7 +15,7 @@
 
 **Imagine Your Craft (IYC)** is a Minecraft mod developed using NeoForge. The core idea behind this project is to revive the famous "Imagine Your Craft" mod, originally created in 2012, by porting it to modern versions of Minecraft.
 
-However, this isn't just a nostalgic copy-paste! This version has been **redesigned and improved**. It features new mechanics, modernized textures, optimized code (goodbye 2012 lag!), and a few brand-new features added here and there to enrich the original experience.
+However, this isn't just a nostalgic copy-paste! This version has been **redesigned and improved**. It features new mechanics, modernized textures, optimized code, and a few brand-new features added here and there to enrich the original experience.
 
 *Please note that the mod is only available in English and French. As the mod developer is French, translation errors may occur. Thank you for your understanding.*
 
