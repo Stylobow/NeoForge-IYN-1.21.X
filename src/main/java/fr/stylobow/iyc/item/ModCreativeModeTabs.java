@@ -22,14 +22,17 @@ public static final DeferredRegister<CreativeModeTab>CREATIVE_MODE_TAB =
                     .title(Component.translatable("creative.iyc.blocks"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModBlocks.IRON_LADDER);
+                        output.accept(ModBlocks.CHERRY_PLANKS);
+                        output.accept(ModBlocks.CHERRY_LOG);
+                        output.accept(ModBlocks.CHERRY_LEAVES);
+                        output.accept(ModBlocks.GLOWSTONE_FENCE);
+                        output.accept(ModBlocks.LOG_FENCE);
+                        output.accept(ModBlocks.STONE_FENCE);
                         output.accept(ModBlocks.OAK_LANTERN);
                         output.accept(ModBlocks.SPRUCE_LANTERN);
                         output.accept(ModBlocks.BIRCH_LANTERN);
                         output.accept(ModBlocks.JUNGLE_LANTERN);
                         output.accept(ModBlocks.IRON_LANTERN);
-                        output.accept(ModBlocks.GLOWSTONE_FENCE);
-                        output.accept(ModBlocks.LOG_FENCE);
-                        output.accept(ModBlocks.STONE_FENCE);
                         output.accept(ModBlocks.JUMPBOX);
                         output.accept(ModBlocks.RUBIS_BLOCK);
                         output.accept(ModBlocks.TOPAZE_BLOCK);

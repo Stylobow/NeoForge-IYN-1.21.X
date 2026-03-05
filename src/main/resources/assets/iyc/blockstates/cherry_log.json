@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "iyc:block/cherry_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "iyc:block/cherry_log"
+    },
+    "axis=z": {
+      "model": "iyc:block/cherry_log",
+      "x": 90
+    }
+  }
+}
