@@ -3,6 +3,7 @@ package fr.stylobow.iyc;
 import fr.stylobow.iyc.block.ModBlocks;
 import fr.stylobow.iyc.block.entity.ModBlockEntities;
 import fr.stylobow.iyc.config.ClientConfig;
+import fr.stylobow.iyc.item.ModArmorMaterials;
 import fr.stylobow.iyc.item.ModCreativeModeTabs;
 import fr.stylobow.iyc.item.ModItems;
 import fr.stylobow.iyc.sound.ModSounds;
@@ -38,6 +39,7 @@ public class ImagineYourCraft {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModArmorMaterials.ARMOR_MATERIALS.register(modEventBus);
         ModBlockEntities.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);

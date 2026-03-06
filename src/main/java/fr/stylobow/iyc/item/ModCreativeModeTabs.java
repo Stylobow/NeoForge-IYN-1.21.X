@@ -186,9 +186,25 @@ public static final DeferredRegister<CreativeModeTab>CREATIVE_MODE_TAB =
                     .title(Component.translatable("creative.iyc.combat"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.RUBIS_SWORD);
+                        output.accept(ModItems.RUBIS_HELMET);
+                        output.accept(ModItems.RUBIS_CHESTPLATE);
+                        output.accept(ModItems.RUBIS_LEGGINGS);
+                        output.accept(ModItems.RUBIS_BOOTS);
                         output.accept(ModItems.SAPHIR_SWORD);
+                        output.accept(ModItems.SAPHIR_HELMET);
+                        output.accept(ModItems.SAPHIR_CHESTPLATE);
+                        output.accept(ModItems.SAPHIR_LEGGINGS);
+                        output.accept(ModItems.SAPHIR_BOOTS);
                         output.accept(ModItems.TOPAZE_SWORD);
+                        output.accept(ModItems.TOPAZE_HELMET);
+                        output.accept(ModItems.TOPAZE_CHESTPLATE);
+                        output.accept(ModItems.TOPAZE_LEGGINGS);
+                        output.accept(ModItems.TOPAZE_BOOTS);
                         output.accept(ModItems.ADAMANTIUM_SWORD);
+                        output.accept(ModItems.ADAMANTIUM_HELMET);
+                        output.accept(ModItems.ADAMANTIUM_CHESTPLATE);
+                        output.accept(ModItems.ADAMANTIUM_LEGGINGS);
+                        output.accept(ModItems.ADAMANTIUM_BOOTS);
                     }).build());
 
     public static final Supplier<CreativeModeTab>  IYC_TOOLS_TAB = CREATIVE_MODE_TAB.register("iyc_tools_tab",
