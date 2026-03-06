@@ -24,6 +24,22 @@ public enum ModTiers implements Tier {
             4.0F,
             19,
             () -> Ingredient.of(ModItems.RUBIS.get())
+    ),
+
+    TOPAZE(
+            1795,
+            10F,
+            4.5F,
+            20,
+            () -> Ingredient.of(ModItems.TOPAZE.get())
+    ),
+
+    ADAMANTIUM(
+            1873,
+            11F,
+            5.5F,
+            22,
+            () -> Ingredient.of(ModItems.ADAMANTIUM_FRAGMENT.get())
     );
 
     private final int uses;

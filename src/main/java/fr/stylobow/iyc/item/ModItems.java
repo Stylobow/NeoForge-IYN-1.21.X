@@ -129,6 +129,28 @@ public class ModItems {
     public static final DeferredItem<Item> RUBIS_HOE = ITEMS.register("rubis_hoe",
             () -> new HoeItem(ModTiers.RUBIS, new Item.Properties().attributes(HoeItem.createAttributes(ModTiers.RUBIS, -2, -1.0F))));
 
+    public static final DeferredItem<Item> TOPAZE_SWORD = ITEMS.register("topaze_sword",
+            () -> new SwordItem(ModTiers.TOPAZE, new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.TOPAZE, 3, -2.4F))));
+    public static final DeferredItem<Item> TOPAZE_PICKAXE = ITEMS.register("topaze_pickaxe",
+            () -> new PickaxeItem(ModTiers.TOPAZE, new Item.Properties().attributes(PickaxeItem.createAttributes(ModTiers.TOPAZE, 1, -2.8F))));
+    public static final DeferredItem<Item> TOPAZE_AXE = ITEMS.register("topaze_axe",
+            () -> new AxeItem(ModTiers.TOPAZE, new Item.Properties().attributes(AxeItem.createAttributes(ModTiers.TOPAZE, 6, -3.0F))));
+    public static final DeferredItem<Item> TOPAZE_SHOVEL = ITEMS.register("topaze_shovel",
+            () -> new ShovelItem(ModTiers.TOPAZE, new Item.Properties().attributes(ShovelItem.createAttributes(ModTiers.TOPAZE, 1.5F, -3.0F))));
+    public static final DeferredItem<Item> TOPAZE_HOE = ITEMS.register("topaze_hoe",
+            () -> new HoeItem(ModTiers.TOPAZE, new Item.Properties().attributes(HoeItem.createAttributes(ModTiers.TOPAZE, -2, -1.0F))));
+
+    public static final DeferredItem<Item> ADAMANTIUM_SWORD = ITEMS.register("adamantium_sword",
+            () -> new SwordItem(ModTiers.ADAMANTIUM, new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.ADAMANTIUM, 3, -2.4F))));
+    public static final DeferredItem<Item> ADAMANTIUM_PICKAXE = ITEMS.register("adamantium_pickaxe",
+            () -> new PickaxeItem(ModTiers.ADAMANTIUM, new Item.Properties().attributes(PickaxeItem.createAttributes(ModTiers.ADAMANTIUM, 1, -2.8F))));
+    public static final DeferredItem<Item> ADAMANTIUM_AXE = ITEMS.register("adamantium_axe",
+            () -> new AxeItem(ModTiers.ADAMANTIUM, new Item.Properties().attributes(AxeItem.createAttributes(ModTiers.ADAMANTIUM, 6, -3.0F))));
+    public static final DeferredItem<Item> ADAMANTIUM_SHOVEL = ITEMS.register("adamantium_shovel",
+            () -> new ShovelItem(ModTiers.ADAMANTIUM, new Item.Properties().attributes(ShovelItem.createAttributes(ModTiers.ADAMANTIUM, 1.5F, -3.0F))));
+    public static final DeferredItem<Item> ADAMANTIUM_HOE = ITEMS.register("adamantium_hoe",
+            () -> new HoeItem(ModTiers.ADAMANTIUM, new Item.Properties().attributes(HoeItem.createAttributes(ModTiers.ADAMANTIUM, -2, -1.0F))));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -187,6 +187,8 @@ public static final DeferredRegister<CreativeModeTab>CREATIVE_MODE_TAB =
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.RUBIS_SWORD);
                         output.accept(ModItems.SAPHIR_SWORD);
+                        output.accept(ModItems.TOPAZE_SWORD);
+                        output.accept(ModItems.ADAMANTIUM_SWORD);
                     }).build());
 
     public static final Supplier<CreativeModeTab>  IYC_TOOLS_TAB = CREATIVE_MODE_TAB.register("iyc_tools_tab",
@@ -202,6 +204,14 @@ public static final DeferredRegister<CreativeModeTab>CREATIVE_MODE_TAB =
                         output.accept(ModItems.SAPHIR_PICKAXE);
                         output.accept(ModItems.SAPHIR_HOE);
                         output.accept(ModItems.SAPHIR_AXE);
+                        output.accept(ModItems.TOPAZE_SHOVEL);
+                        output.accept(ModItems.TOPAZE_PICKAXE);
+                        output.accept(ModItems.TOPAZE_HOE);
+                        output.accept(ModItems.TOPAZE_AXE);
+                        output.accept(ModItems.ADAMANTIUM_SHOVEL);
+                        output.accept(ModItems.ADAMANTIUM_PICKAXE);
+                        output.accept(ModItems.ADAMANTIUM_HOE);
+                        output.accept(ModItems.ADAMANTIUM_AXE);
                     }).build());
 
     public static void register(IEventBus eventBus) {

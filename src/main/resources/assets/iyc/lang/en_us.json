@@ -86,6 +86,18 @@
   "item.iyc.rubis_hoe": "Rubis hoe",
   "item.iyc.rubis_axe": "Rubis axe",
 
+  "item.iyc.topaze_sword": "Topaze sword",
+  "item.iyc.topaze_shovel": "Topaze shovel",
+  "item.iyc.topaze_pickaxe": "Topaze pickaxe",
+  "item.iyc.topaze_hoe": "Topaze hoe",
+  "item.iyc.topaze_axe": "Topaze axe",
+
+  "item.iyc.adamantium_sword": "Adamantium sword",
+  "item.iyc.adamantium_shovel": "Adamantium shovel",
+  "item.iyc.adamantium_pickaxe": "Adamantium pickaxe",
+  "item.iyc.adamantium_hoe": "Adamantium hoe",
+  "item.iyc.adamantium_axe": "Adamantium axe",
+
   "block.iyc.orange_iron_block": "Orange iron block",
   "block.iyc.magenta_iron_block": "Magenta iron block",
   "block.iyc.light_blue_iron_block": "Light blue iron block",
