@@ -32,8 +32,8 @@ public class MusicScreen extends Screen {
         int leftCol = this.width / 2 - 155;
         int midCol = this.width / 2 - 50;
         int rightCol = this.width / 2 + 55;
-        int row1 = this.height / 2 - 70;
-        int row2 = this.height / 2 - 45;
+        int row1 = this.height / 2 - 175;
+        int row2 = this.height / 2 - 150;
 
         this.nrjButton = Button.builder(Component.literal("NRJ"), button -> {
             RadioManager.play("https://streaming.nrjaudio.fm/oumvmk8fnozc", "NRJ");
@@ -74,10 +74,10 @@ public class MusicScreen extends Screen {
         this.stopButton = Button.builder(Component.translatable("iyc.music.stop"), button -> {
             RadioManager.stop();
             updateButtons();
-        }).bounds(this.width / 2 - 60, this.height / 2 - 10, 120, 20).build();
+        }).bounds(this.width / 2 - 50, this.height / 2 - 125, 100, 20).build();
         this.addRenderableWidget(this.stopButton);
 
-        this.volumeSlider = new AbstractSliderButton(this.width / 2 - 60, this.height / 2 + 15, 120, 20, Component.translatable("iyc.music.volume", (int)(RadioManager.getVolume() * 100)), RadioManager.getVolume()) {
+        this.volumeSlider = new AbstractSliderButton(this.width / 2 - 50, this.height / 2 - 100, 100, 20, Component.translatable("iyc.music.volume", (int)(RadioManager.getVolume() * 100)), RadioManager.getVolume()) {
             @Override
             protected void updateMessage() {
                 this.setMessage(Component.translatable("iyc.music.volume", (int) (this.value * 100)));
