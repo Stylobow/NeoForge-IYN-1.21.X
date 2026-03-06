@@ -112,44 +112,44 @@ public class ModItems {
     public static final DeferredItem<Item> SAPHIR_PICKAXE = ITEMS.register("saphir_pickaxe",
             () -> new PickaxeItem(ModTiers.SAPHIR, new Item.Properties().attributes(PickaxeItem.createAttributes(ModTiers.SAPHIR, 1, -2.8F))));
     public static final DeferredItem<Item> SAPHIR_AXE = ITEMS.register("saphir_axe",
-            () -> new AxeItem(ModTiers.SAPHIR, new Item.Properties().attributes(AxeItem.createAttributes(ModTiers.SAPHIR, 6, -3.0F))));
+            () -> new AxeItem(ModTiers.SAPHIR, new Item.Properties().attributes(AxeItem.createAttributes(ModTiers.SAPHIR, 5, -3.0F))));
     public static final DeferredItem<Item> SAPHIR_SHOVEL = ITEMS.register("saphir_shovel",
             () -> new ShovelItem(ModTiers.SAPHIR, new Item.Properties().attributes(ShovelItem.createAttributes(ModTiers.SAPHIR, 1.5F, -3.0F))));
     public static final DeferredItem<Item> SAPHIR_HOE = ITEMS.register("saphir_hoe",
-            () -> new HoeItem(ModTiers.SAPHIR, new Item.Properties().attributes(HoeItem.createAttributes(ModTiers.SAPHIR, -2, -1.0F))));
+            () -> new HoeItem(ModTiers.SAPHIR, new Item.Properties().attributes(HoeItem.createAttributes(ModTiers.SAPHIR, -3, -1.0F))));
 
     public static final DeferredItem<Item> RUBIS_SWORD = ITEMS.register("rubis_sword",
             () -> new SwordItem(ModTiers.RUBIS, new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.RUBIS, 3, -2.4F))));
     public static final DeferredItem<Item> RUBIS_PICKAXE = ITEMS.register("rubis_pickaxe",
             () -> new PickaxeItem(ModTiers.RUBIS, new Item.Properties().attributes(PickaxeItem.createAttributes(ModTiers.RUBIS, 1, -2.8F))));
     public static final DeferredItem<Item> RUBIS_AXE = ITEMS.register("rubis_axe",
-            () -> new AxeItem(ModTiers.RUBIS, new Item.Properties().attributes(AxeItem.createAttributes(ModTiers.RUBIS, 6, -3.0F))));
+            () -> new AxeItem(ModTiers.RUBIS, new Item.Properties().attributes(AxeItem.createAttributes(ModTiers.RUBIS, 5, -3.0F))));
     public static final DeferredItem<Item> RUBIS_SHOVEL = ITEMS.register("rubis_shovel",
             () -> new ShovelItem(ModTiers.RUBIS, new Item.Properties().attributes(ShovelItem.createAttributes(ModTiers.RUBIS, 1.5F, -3.0F))));
     public static final DeferredItem<Item> RUBIS_HOE = ITEMS.register("rubis_hoe",
-            () -> new HoeItem(ModTiers.RUBIS, new Item.Properties().attributes(HoeItem.createAttributes(ModTiers.RUBIS, -2, -1.0F))));
+            () -> new HoeItem(ModTiers.RUBIS, new Item.Properties().attributes(HoeItem.createAttributes(ModTiers.RUBIS, -3, -1.0F))));
 
     public static final DeferredItem<Item> TOPAZE_SWORD = ITEMS.register("topaze_sword",
             () -> new SwordItem(ModTiers.TOPAZE, new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.TOPAZE, 3, -2.4F))));
     public static final DeferredItem<Item> TOPAZE_PICKAXE = ITEMS.register("topaze_pickaxe",
             () -> new PickaxeItem(ModTiers.TOPAZE, new Item.Properties().attributes(PickaxeItem.createAttributes(ModTiers.TOPAZE, 1, -2.8F))));
     public static final DeferredItem<Item> TOPAZE_AXE = ITEMS.register("topaze_axe",
-            () -> new AxeItem(ModTiers.TOPAZE, new Item.Properties().attributes(AxeItem.createAttributes(ModTiers.TOPAZE, 6, -3.0F))));
+            () -> new AxeItem(ModTiers.TOPAZE, new Item.Properties().attributes(AxeItem.createAttributes(ModTiers.TOPAZE, 5, -3.0F))));
     public static final DeferredItem<Item> TOPAZE_SHOVEL = ITEMS.register("topaze_shovel",
             () -> new ShovelItem(ModTiers.TOPAZE, new Item.Properties().attributes(ShovelItem.createAttributes(ModTiers.TOPAZE, 1.5F, -3.0F))));
     public static final DeferredItem<Item> TOPAZE_HOE = ITEMS.register("topaze_hoe",
-            () -> new HoeItem(ModTiers.TOPAZE, new Item.Properties().attributes(HoeItem.createAttributes(ModTiers.TOPAZE, -2, -1.0F))));
+            () -> new HoeItem(ModTiers.TOPAZE, new Item.Properties().attributes(HoeItem.createAttributes(ModTiers.TOPAZE, -3, 0.0F))));
 
     public static final DeferredItem<Item> ADAMANTIUM_SWORD = ITEMS.register("adamantium_sword",
             () -> new SwordItem(ModTiers.ADAMANTIUM, new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.ADAMANTIUM, 3, -2.4F))));
     public static final DeferredItem<Item> ADAMANTIUM_PICKAXE = ITEMS.register("adamantium_pickaxe",
             () -> new PickaxeItem(ModTiers.ADAMANTIUM, new Item.Properties().attributes(PickaxeItem.createAttributes(ModTiers.ADAMANTIUM, 1, -2.8F))));
     public static final DeferredItem<Item> ADAMANTIUM_AXE = ITEMS.register("adamantium_axe",
-            () -> new AxeItem(ModTiers.ADAMANTIUM, new Item.Properties().attributes(AxeItem.createAttributes(ModTiers.ADAMANTIUM, 6, -3.0F))));
+            () -> new AxeItem(ModTiers.ADAMANTIUM, new Item.Properties().attributes(AxeItem.createAttributes(ModTiers.ADAMANTIUM, 5, -3.0F))));
     public static final DeferredItem<Item> ADAMANTIUM_SHOVEL = ITEMS.register("adamantium_shovel",
             () -> new ShovelItem(ModTiers.ADAMANTIUM, new Item.Properties().attributes(ShovelItem.createAttributes(ModTiers.ADAMANTIUM, 1.5F, -3.0F))));
     public static final DeferredItem<Item> ADAMANTIUM_HOE = ITEMS.register("adamantium_hoe",
-            () -> new HoeItem(ModTiers.ADAMANTIUM, new Item.Properties().attributes(HoeItem.createAttributes(ModTiers.ADAMANTIUM, -2, -1.0F))));
+            () -> new HoeItem(ModTiers.ADAMANTIUM, new Item.Properties().attributes(HoeItem.createAttributes(ModTiers.ADAMANTIUM, -4, 0.0F))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

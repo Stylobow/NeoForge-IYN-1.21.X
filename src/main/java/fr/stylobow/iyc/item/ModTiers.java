@@ -11,34 +11,34 @@ import java.util.function.Supplier;
 public enum ModTiers implements Tier {
 
     SAPHIR(
-            1639, // Durability (Iron = 250, Diamond = 1561)
-            8F,          // Mining speed (Iron = 6.0F, Diamod = 8.0F)
-            3.5F,       // Bonus damages (Iron = 2.0F, Diamond = 3.0F)
-            24,         // Enchantability (Iron = 14, Gold = 22)
+            1650,        // Durability
+            8.3F,              // Minin Speed
+            3.2F,              // Damage Bonus
+            24,                // Enchantability
             () -> Ingredient.of(ModItems.SAPHIR.get())
     ),
 
     RUBIS(
-            1717,
-            9.0F,
-            4.0F,
-            19,
+            1750,
+            8.6F,
+            3.5F,
+            22,
             () -> Ingredient.of(ModItems.RUBIS.get())
     ),
 
     TOPAZE(
-            1795,
-            10F,
-            4.5F,
+            1900,
+            8.9F,
+            3.8F,
             20,
             () -> Ingredient.of(ModItems.TOPAZE.get())
     ),
 
     ADAMANTIUM(
-            1873,
-            11F,
-            5.5F,
-            22,
+            2200,
+            9.5F,
+            4.5F,
+            18,
             () -> Ingredient.of(ModItems.ADAMANTIUM_FRAGMENT.get())
     );
 
