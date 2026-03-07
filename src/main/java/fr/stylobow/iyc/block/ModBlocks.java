@@ -4,10 +4,7 @@ import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import fr.stylobow.iyc.ImagineYourCraft;
-import fr.stylobow.iyc.block.custom.IronLadderBlock;
-import fr.stylobow.iyc.block.custom.JumpBoxBlock;
-import fr.stylobow.iyc.block.custom.OakShelfBlock;
-import fr.stylobow.iyc.block.custom.RainbowBlock;
+import fr.stylobow.iyc.block.custom.*;
 import fr.stylobow.iyc.event.ColorEvents;
 import fr.stylobow.iyc.item.ModItems;
 import net.minecraft.core.BlockPos;
@@ -290,6 +287,23 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> OAK_SHELF = registerBlock("oak_shelf",
             () -> new OakShelfBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion()));
+
+    public static final DeferredBlock<Block> WHITE_CLOUD = registerBlock("white_cloud", () -> new CloudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL).noCollission().noOcclusion(), 1.0F, 1.0F, 1.0F));
+    public static final DeferredBlock<Block> ORANGE_CLOUD = registerBlock("orange_cloud", () -> new CloudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_WOOL).noCollission().noOcclusion(), 0.95F, 0.45F, 0.0F));
+    public static final DeferredBlock<Block> MAGENTA_CLOUD = registerBlock("magenta_cloud", () -> new CloudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MAGENTA_WOOL).noCollission().noOcclusion(), 0.75F, 0.17F, 0.58F));
+    public static final DeferredBlock<Block> LIGHT_BLUE_CLOUD = registerBlock("light_blue_cloud", () -> new CloudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_BLUE_WOOL).noCollission().noOcclusion(), 0.22F, 0.69F, 0.87F));
+    public static final DeferredBlock<Block> YELLOW_CLOUD = registerBlock("yellow_cloud", () -> new CloudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_WOOL).noCollission().noOcclusion(), 0.97F, 0.79F, 0.17F));
+    public static final DeferredBlock<Block> LIME_CLOUD = registerBlock("lime_cloud", () -> new CloudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LIME_WOOL).noCollission().noOcclusion(), 0.5F, 0.78F, 0.1F));
+    public static final DeferredBlock<Block> PINK_CLOUD = registerBlock("pink_cloud", () -> new CloudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PINK_WOOL).noCollission().noOcclusion(), 0.95F, 0.55F, 0.67F));
+    public static final DeferredBlock<Block> GRAY_CLOUD = registerBlock("gray_cloud", () -> new CloudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_WOOL).noCollission().noOcclusion(), 0.27F, 0.31F, 0.33F));
+    public static final DeferredBlock<Block> LIGHT_GRAY_CLOUD = registerBlock("light_gray_cloud", () -> new CloudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_WOOL).noCollission().noOcclusion(), 0.61F, 0.63F, 0.61F));
+    public static final DeferredBlock<Block> CYAN_CLOUD = registerBlock("cyan_cloud", () -> new CloudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CYAN_WOOL).noCollission().noOcclusion(), 0.08F, 0.55F, 0.59F));
+    public static final DeferredBlock<Block> PURPLE_CLOUD = registerBlock("purple_cloud", () -> new CloudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PURPLE_WOOL).noCollission().noOcclusion(), 0.53F, 0.12F, 0.69F));
+    public static final DeferredBlock<Block> BLUE_CLOUD = registerBlock("blue_cloud", () -> new CloudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_WOOL).noCollission().noOcclusion(), 0.22F, 0.17F, 0.71F));
+    public static final DeferredBlock<Block> BROWN_CLOUD = registerBlock("brown_cloud", () -> new CloudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_WOOL).noCollission().noOcclusion(), 0.51F, 0.32F, 0.2F));
+    public static final DeferredBlock<Block> GREEN_CLOUD = registerBlock("green_cloud", () -> new CloudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_WOOL).noCollission().noOcclusion(), 0.36F, 0.49F, 0.14F));
+    public static final DeferredBlock<Block> RED_CLOUD = registerBlock("red_cloud", () -> new CloudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_WOOL).noCollission().noOcclusion(), 0.69F, 0.18F, 0.18F));
+    public static final DeferredBlock<Block> BLACK_CLOUD = registerBlock("black_cloud", () -> new CloudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_WOOL).noCollission().noOcclusion(), 0.11F, 0.11F, 0.12F));
 
     private static BlockBehaviour.Properties getIronBlockProperties() {
         return BlockBehaviour.Properties.of()

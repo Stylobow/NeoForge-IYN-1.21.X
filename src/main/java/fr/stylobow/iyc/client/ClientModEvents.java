@@ -1,7 +1,6 @@
 package fr.stylobow.iyc.client;
 
 import fr.stylobow.iyc.block.entity.ModBlockEntities;
-import fr.stylobow.iyc.client.renderer.CustomCapeLayer;
 import fr.stylobow.iyc.client.renderer.RainbowBlockRenderer;
 import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.player.AbstractClientPlayer;
@@ -24,15 +23,9 @@ public class ClientModEvents {
     @SubscribeEvent
     public static void registerLayers(EntityRenderersEvent.AddLayers event) {
 
-        for (PlayerSkin.Model skinName : event.getSkins()) {
-            var renderer = event.getSkin(skinName);
-
-            if (renderer instanceof LivingEntityRenderer livingRenderer) {
-
-                livingRenderer.addLayer(new CustomCapeLayer(
-                        (RenderLayerParent<AbstractClientPlayer, PlayerModel<AbstractClientPlayer>>) livingRenderer
-                ));
-            }
-        }
+//        for (PlayerSkin.Model skinName : event.getSkins()) {
+//            var renderer = event.getSkin(skinName);
+//
+//        }
     }
 }
