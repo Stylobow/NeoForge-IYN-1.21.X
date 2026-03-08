@@ -1,0 +1,6 @@
+{
+    "parent": "iyc:block/table_empty",
+    "textures": {
+        "texture": "minecraft:block/bamboo_planks"
+    }
+}

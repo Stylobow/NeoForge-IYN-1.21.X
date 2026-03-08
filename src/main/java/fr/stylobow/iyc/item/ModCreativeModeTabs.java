@@ -91,6 +91,21 @@ public static final DeferredRegister<CreativeModeTab>CREATIVE_MODE_TAB =
                         output.accept(ModBlocks.COBBLESTONE_CHAIR);
                         output.accept(ModBlocks.STONE_BRICK_CHAIR);
                         output.accept(ModBlocks.DEEPSLATE_BRICK_CHAIR);
+                        output.accept(ModBlocks.OAK_TABLE);
+                        output.accept(ModBlocks.SPRUCE_TABLE);
+                        output.accept(ModBlocks.BIRCH_TABLE);
+                        output.accept(ModBlocks.JUNGLE_TABLE);
+                        output.accept(ModBlocks.ACACIA_TABLE);
+                        output.accept(ModBlocks.DARK_OAK_TABLE);
+                        output.accept(ModBlocks.MANGROVE_TABLE);
+                        output.accept(ModBlocks.CHERRY_TABLE);
+                        output.accept(ModBlocks.BAMBOO_TABLE);
+                        output.accept(ModBlocks.CRIMSON_TABLE);
+                        output.accept(ModBlocks.WARPED_TABLE);
+                        output.accept(ModBlocks.STONE_TABLE);
+                        output.accept(ModBlocks.COBBLESTONE_TABLE);
+                        output.accept(ModBlocks.STONE_BRICK_TABLE);
+                        output.accept(ModBlocks.DEEPSLATE_BRICK_TABLE);
                     }).build());
 
     public static final Supplier<CreativeModeTab>  IYC_MATERIALS_TAB = CREATIVE_MODE_TAB.register("iyc_materials_tab",
