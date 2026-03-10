@@ -66,7 +66,7 @@ public class MusicScreen extends Screen {
         this.addRenderableWidget(this.tomorrowlandButton);
 
         this.iycradioButton = Button.builder(Component.literal("IYC Radio"), button -> {
-            RadioManager.play("https://streaming.nrjaudio.fm/ou3crtuizv6i", "IYC Radio");
+            RadioManager.play("https://streaming.nrjaudio.fm/ouuc385n3nje", "IYC Radio");
             updateButtons();
         }).bounds(rightCol, row2, btnWidth, btnHeight).build();
         this.addRenderableWidget(this.iycradioButton);
