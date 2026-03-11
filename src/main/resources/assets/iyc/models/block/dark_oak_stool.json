@@ -1,0 +1,6 @@
+{
+    "parent": "iyc:block/stool",
+    "textures": {
+        "texture": "minecraft:block/dark_oak_planks"
+    }
+}
