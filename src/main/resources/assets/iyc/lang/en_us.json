@@ -381,5 +381,12 @@
   "item.iyc.touch": "Music Disc",
   "subtitles.iyc.mc_style": "CaptainSparklez - Minecraft Style",
   "item.iyc.mc_style.desc": "CaptainSparklez - Minecraft Style",
-  "item.iyc.mc_style": "Music Disc"
+  "item.iyc.mc_style": "Music Disc",
+
+  "command.iyc.cosmetic.nocosmetic": "%s is not wearing any cosmetic!",
+  "command.iyc.cosmetic.removed": "%s is no longer wearing any cosmetics.",
+  "command.iyc.cosmetic.success": "Cosmetic '%s' applied to %s",
+  "command.iyc.cosmetic.already_worn": "%s is already wearing this cosmetic!",
+  "command.iyc.cosmetic.notfound": "Cosmetic '%s' does not exist!",
+  "command.iyc.cosmetic.clear_success": "All cosmetics for %s have been removed"
 }

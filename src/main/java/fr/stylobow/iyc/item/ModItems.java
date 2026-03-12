@@ -20,6 +20,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ImagineYourCraft.MOD_ID);
 
+    public static final DeferredItem<Item> SANTA_HAT_COSMETIC = ITEMS.register("santa_hat",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+
     public static final DeferredItem<Item> HNS_ITEM = ITEMS.register("hns_item",
             () -> new Item(new Item.Properties().stacksTo(64)));
     public static final DeferredItem<Item> KEY = ITEMS.register("key",

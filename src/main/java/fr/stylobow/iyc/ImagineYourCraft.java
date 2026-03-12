@@ -1,5 +1,6 @@
 package fr.stylobow.iyc;
 
+import fr.stylobow.iyc.attachment.ModAttachmentTypes;
 import fr.stylobow.iyc.block.ModBlocks;
 import fr.stylobow.iyc.block.entity.ChairRenderer;
 import fr.stylobow.iyc.block.entity.ModBlockEntities;
@@ -42,6 +43,7 @@ public class ImagineYourCraft {
         ModSounds.register(modEventBus);
         ModArmorMaterials.ARMOR_MATERIALS.register(modEventBus);
         ModBlockEntities.register(modEventBus);
+        ModAttachmentTypes.ATTACHMENT_TYPES.register(modEventBus);
 
         ModEntities.ENTITY_TYPES.register(modEventBus);
 

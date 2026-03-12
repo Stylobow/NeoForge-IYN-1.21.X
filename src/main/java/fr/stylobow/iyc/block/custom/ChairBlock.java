@@ -96,4 +96,17 @@ public class ChairBlock extends HorizontalDirectionalBlock {
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(FACING);
     }
+
+    @Override
+    public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean movedByPiston) {
+        if (state.getBlock() != newState.getBlock()) {
+            List<ChairEntity> entities = level.getEntities(ModEntities.CHAIR_ENTITY.get(), new AABB(pos), chair -> true);
+
+            for (ChairEntity entity : entities) {
+                entity.discard();
+            }
+        }
+
+        super.onRemove(state, level, pos, newState, movedByPiston);
+    }
 }
