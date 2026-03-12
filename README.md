@@ -5,7 +5,7 @@
 <h1 align="center">Imagine Your Craft (IYC)</h1>
 
 <p align="center">
-  <em>A modern rebirth of the classic 2012 mod, powered by NeoForge.</em>
+  <em>A modern rebirth of the classic IYC 2012 mod</em>
 </p>
 <p align="center"><em>Developed by Stylobow</em></p>
 
@@ -13,7 +13,7 @@
 
 ## 📖 About the Project
 
-**Imagine Your Craft (IYC)** is a Minecraft mod developed using NeoForge. The core idea behind this project is to revive the famous "Imagine Your Craft" mod, originally created in 2012, by porting it to modern versions of Minecraft.
+**Imagine Your Craft (IYC)** is a Minecraft mod developed using [NeoForge-21.0.167](https://neoforged.net/) - The core idea behind this project is to revive the famous "Imagine Your Craft" mod, originally created in 2012, by porting it to modern versions of Minecraft.
 
 However, this isn't just a nostalgic copy-paste! This version has been **redesigned and improved**. It features new mechanics, modernized textures, optimized code, and a few brand-new features added here and there to enrich the original experience.
 
@@ -21,9 +21,9 @@ However, this isn't just a nostalgic copy-paste! This version has been **redesig
 
 ### ✨ Features (Work in Progress)
 * **New Ores & Materials:** Topaze, Rubis, Saphire, Adamantium, etc.
-* **Decorative & Technical Blocks:** Optimized colored iron blocks, multicolored redstone lamps, and much more...
-* **Magical & Utility Items:** Magic wands, sonic screwdriver, materials item...
-* **Custom Interface (HUD):** Fully integrated and optimized in-game Keystrokes (CPS) system, Custom Skin HD supported, Custom HAT/Capes.
+* **Decorative & Colored Blocks:** Optimized colored iron blocks, multicolored redstone lamps, and much more...
+* **Furniture Blocks:** Chairs, Tables, Stools, Benches… have been created and are usable in all types of wood.
+* **Custom Interface (HUD):** Fully integrated and optimized in-game Keystrokes (CPS) system, Custom Skin/Capes HD supported and some cool features.
 ---
 
 ## ⚠️ Development Status
@@ -35,3 +35,5 @@ At this time, **no playable version (`.jar`) is available for download.** The mo
 - [ ] Configuring all loot tables.
 - [ ] Integrating all crafting recipes.
 - [ ] Complete survival compatibility testing.
+
+![Progress](https://img.shields.io/badge/Estimated_Progress-60%25-brightgreen)
