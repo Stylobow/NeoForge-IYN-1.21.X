@@ -1,0 +1,6 @@
+{
+    "parent": "iyc:block/high_stool",
+    "textures": {
+        "texture": "minecraft:block/stone"
+    }
+}

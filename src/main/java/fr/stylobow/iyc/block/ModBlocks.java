@@ -395,6 +395,37 @@ public class ModBlocks {
     public static final DeferredBlock<Block> DEEPSLATE_BRICK_STOOL = registerBlock("deepslate_brick_stool",
             () -> new StoolBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_BRICKS).noOcclusion()));
 
+    public static final DeferredBlock<Block> OAK_HIGH_STOOL = registerBlock("oak_high_stool",
+            () -> new HighStoolBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion()));
+    public static final DeferredBlock<Block> SPRUCE_HIGH_STOOL = registerBlock("spruce_high_stool",
+            () -> new HighStoolBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS).noOcclusion()));
+    public static final DeferredBlock<Block> BIRCH_HIGH_STOOL = registerBlock("birch_high_stool",
+            () -> new HighStoolBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BIRCH_PLANKS).noOcclusion()));
+    public static final DeferredBlock<Block> JUNGLE_HIGH_STOOL = registerBlock("jungle_high_stool",
+            () -> new HighStoolBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.JUNGLE_PLANKS).noOcclusion()));
+    public static final DeferredBlock<Block> ACACIA_HIGH_STOOL = registerBlock("acacia_high_stool",
+            () -> new HighStoolBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS).noOcclusion()));
+    public static final DeferredBlock<Block> DARK_OAK_HIGH_STOOL = registerBlock("dark_oak_high_stool",
+            () -> new HighStoolBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS).noOcclusion()));
+    public static final DeferredBlock<Block> MANGROVE_HIGH_STOOL = registerBlock("mangrove_high_stool",
+            () -> new HighStoolBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MANGROVE_PLANKS).noOcclusion()));
+    public static final DeferredBlock<Block> CHERRY_HIGH_STOOL = registerBlock("cherry_high_stool",
+            () -> new HighStoolBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_PLANKS).noOcclusion()));
+    public static final DeferredBlock<Block> BAMBOO_HIGH_STOOL = registerBlock("bamboo_high_stool",
+            () -> new HighStoolBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS).noOcclusion()));
+    public static final DeferredBlock<Block> CRIMSON_HIGH_STOOL = registerBlock("crimson_high_stool",
+            () -> new HighStoolBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS).noOcclusion()));
+    public static final DeferredBlock<Block> WARPED_HIGH_STOOL = registerBlock("warped_high_stool",
+            () -> new HighStoolBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS).noOcclusion()));
+    public static final DeferredBlock<Block> STONE_HIGH_STOOL = registerBlock("stone_high_stool",
+            () -> new HighStoolBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).noOcclusion()));
+    public static final DeferredBlock<Block> COBBLESTONE_HIGH_STOOL = registerBlock("cobblestone_high_stool",
+            () -> new HighStoolBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE).noOcclusion()));
+    public static final DeferredBlock<Block> STONE_BRICK_HIGH_STOOL = registerBlock("stone_brick_high_stool",
+            () -> new HighStoolBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS).noOcclusion()));
+    public static final DeferredBlock<Block> DEEPSLATE_BRICK_HIGH_STOOL = registerBlock("deepslate_brick_high_stool",
+            () -> new HighStoolBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_BRICKS).noOcclusion()));
+
     public static final DeferredBlock<Block> OAK_TABLE = registerBlock("oak_table",
             () -> new TableBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final DeferredBlock<Block> SPRUCE_TABLE = registerBlock("spruce_table",
