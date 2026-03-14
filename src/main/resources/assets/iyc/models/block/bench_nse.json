@@ -1,0 +1,39 @@
+{
+"__comment": "Designed by Termi76 with BDcraft Cubik PRO 0.92 Beta - http://bdcraft.net",
+"textures": {
+    "particle": "#texture"
+},
+"elements": [ 
+{
+    "__comment": "assise",
+    "from": [ 3, 8, 0 ],
+    "to": [ 13, 9.5, 16 ],
+    "faces": {
+        "down":  { "uv": [ 3, 0, 13, 16 ], "texture": "#texture" },
+        "up":    { "uv": [ 3, 0, 13, 16 ], "texture": "#texture" },
+        "north": { "uv": [ 3, 6.5, 13, 8 ], "texture": "#texture", "cullface": "north" },
+        "south": { "uv": [ 3, 6.5, 13, 8 ], "texture": "#texture", "cullface": "south" },
+        "west":  { "uv": [ 0, 6.5, 16, 8 ], "texture": "#texture" },
+        "east":  { "uv": [ 0, 6.5, 16, 8 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 13, 8, 3 ],
+    "to": [ 16, 9.5, 13 ],
+    "faces": {
+        "down":  { "uv": [ 13, 3, 16, 13 ], "texture": "#texture" },
+        "up":    { "uv": [ 13, 3, 16, 13 ], "texture": "#texture" },
+        "north": { "uv": [ 13, 6.5, 16, 8 ], "texture": "#texture" },
+        "south": { "uv": [ 13, 6.5, 16, 8 ], "texture": "#texture" },
+        "east":  { "uv": [ 3, 6.5, 13, 8 ], "texture": "#texture", "cullface": "east" }
+    }
+}
+],
+"display": {
+    "thirdperson": {
+        "rotation": [ 10, -45, 170 ],
+        "translation": [ 0, 1.5, -2.75 ],
+        "scale": [ 0.375, 0.375, 0.375 ]
+    }
+}
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "iyc:block/bench_n",
+    "textures": {
+        "texture": "minecraft:block/birch_planks"
+    }
+}

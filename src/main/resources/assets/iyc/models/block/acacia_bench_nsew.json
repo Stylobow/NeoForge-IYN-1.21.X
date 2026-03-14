@@ -1,0 +1,6 @@
+{
+    "parent": "iyc:block/bench_nsew",
+    "textures": {
+        "texture": "minecraft:block/acacia_planks"
+    }
+}

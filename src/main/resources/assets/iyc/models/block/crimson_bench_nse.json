@@ -1,0 +1,6 @@
+{
+    "parent": "iyc:block/bench_nse",
+    "textures": {
+        "texture": "minecraft:block/crimson_planks"
+    }
+}

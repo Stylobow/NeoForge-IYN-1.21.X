@@ -1,0 +1,6 @@
+{
+    "parent": "iyc:block/bench_ne",
+    "textures": {
+        "texture": "minecraft:block/stone"
+    }
+}
