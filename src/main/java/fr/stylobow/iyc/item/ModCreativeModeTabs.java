@@ -61,6 +61,7 @@ public static final DeferredRegister<CreativeModeTab>CREATIVE_MODE_TAB =
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(ImagineYourCraft.MOD_ID, "iyc_blocks_tab"))
                     .title(Component.translatable("creative.iyc.decorative"))
                     .displayItems((parameters, output) -> {
+                        output.accept(ModBlocks.BARREL);
                         output.accept(ModBlocks.OAK_SHELF);
                         output.accept(ModBlocks.SPRUCE_SHELF);
                         output.accept(ModBlocks.BIRCH_SHELF);

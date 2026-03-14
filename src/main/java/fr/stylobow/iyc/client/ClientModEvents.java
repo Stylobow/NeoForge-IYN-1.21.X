@@ -4,6 +4,9 @@ import fr.stylobow.iyc.ImagineYourCraft;
 import fr.stylobow.iyc.block.entity.ModBlockEntities;
 import fr.stylobow.iyc.client.renderer.FloatingItemLayer;
 import fr.stylobow.iyc.client.renderer.RainbowBlockRenderer;
+import fr.stylobow.iyc.screen.BarrelMenu;
+import fr.stylobow.iyc.screen.BarrelScreen;
+import fr.stylobow.iyc.screen.ModMenuTypes;
 import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.client.renderer.entity.LivingEntityRenderer;
@@ -13,6 +16,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 
 @EventBusSubscriber(modid = ImagineYourCraft.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientModEvents {
@@ -43,4 +47,10 @@ public class ClientModEvents {
             slimRenderer.addLayer(new FloatingItemLayer(slimRenderer));
         }
     }
+
+    @SubscribeEvent
+    public static void onRegisterMenuScreens(RegisterMenuScreensEvent event) {
+        event.register(ModMenuTypes.BARREL_MENU.get(), BarrelScreen::new);
+    }
+
 }
