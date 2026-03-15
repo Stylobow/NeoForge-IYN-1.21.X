@@ -28,6 +28,12 @@ public static final DeferredRegister<CreativeModeTab>CREATIVE_MODE_TAB =
                         output.accept(ModBlocks.GLOWSTONE_FENCE);
                         output.accept(ModBlocks.LOG_FENCE);
                         output.accept(ModBlocks.STONE_FENCE);
+                        output.accept(ModBlocks.NETHERRACK_SLAB);
+                        output.accept(ModBlocks.OAK_REVERSED_PLANKS_SLAB);
+                        output.accept(ModBlocks.OBSIDIAN_SLAB);
+                        output.accept(ModBlocks.OAK_LOG_SLAB);
+                        output.accept(ModBlocks.GLOWSTONE_SLAB);
+                        output.accept(ModBlocks.SLATE_SLAB);
                         output.accept(ModBlocks.OAK_LANTERN);
                         output.accept(ModBlocks.SPRUCE_LANTERN);
                         output.accept(ModBlocks.BIRCH_LANTERN);

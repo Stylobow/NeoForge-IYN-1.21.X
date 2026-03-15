@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "iyc:block/slate_block",
+    "top": "iyc:block/slate_block",
+    "side": "iyc:block/slate_block"
+  }
+}

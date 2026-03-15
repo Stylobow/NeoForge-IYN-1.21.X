@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "iyc:block/glowstone_slab"
+    },
+    "type=top": {
+      "model": "iyc:block/glowstone_slab_top"
+    },
+    "type=double": {
+      "model": "minecraft:block/glowstone"
+    }
+  }
+}

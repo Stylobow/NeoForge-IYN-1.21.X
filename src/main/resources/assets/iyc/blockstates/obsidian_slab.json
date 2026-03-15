@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "iyc:block/obsidian_slab"
+    },
+    "type=top": {
+      "model": "iyc:block/obsidian_slab_top"
+    },
+    "type=double": {
+      "model": "minecraft:block/obsidian"
+    }
+  }
+}

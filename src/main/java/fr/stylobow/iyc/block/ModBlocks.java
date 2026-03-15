@@ -268,6 +268,19 @@ public class ModBlocks {
     public static final DeferredBlock<Block> STONE_FENCE = registerBlock("stone_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
+    public static final DeferredBlock<Block> NETHERRACK_SLAB = registerBlock("netherrack_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK)));
+    public static final DeferredBlock<Block> OAK_REVERSED_PLANKS_SLAB = registerBlock("oak_reversed_planks_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
+    public static final DeferredBlock<Block> OBSIDIAN_SLAB = registerBlock("obsidian_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN)));
+    public static final DeferredBlock<Block> OAK_LOG_SLAB = registerBlock("oak_log_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
+    public static final DeferredBlock<Block> GLOWSTONE_SLAB = registerBlock("glowstone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)));
+    public static final DeferredBlock<Block> SLATE_SLAB = registerBlock("slate_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.SLATE_BLOCK.get())));
+
     public static final DeferredBlock<Block> JUMPBOX = registerBlock("jumpbox",
             () -> new JumpBoxBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)

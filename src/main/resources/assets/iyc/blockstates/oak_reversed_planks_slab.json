@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "iyc:block/oak_reversed_planks_slab"
+    },
+    "type=top": {
+      "model": "iyc:block/oak_reversed_planks_slab_top"
+    },
+    "type=double": {
+      "model": "iyc:block/oak_reversed_planks"
+    }
+  }
+}

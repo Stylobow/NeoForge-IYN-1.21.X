@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "iyc:block/netherrack_slab"
+    },
+    "type=top": {
+      "model": "iyc:block/netherrack_slab_top"
+    },
+    "type=double": {
+      "model": "minecraft:block/netherrack"
+    }
+  }
+}
