@@ -292,6 +292,29 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CHERRY_LEAVES = registerBlock("cherry_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
 
+    public static final DeferredBlock<Block> OAK_REVERSED_PLANKS = registerBlock("oak_reversed_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
+    public static final DeferredBlock<Block> SPRUCE_REVERSED_PLANKS = registerBlock("spruce_reversed_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS)));
+    public static final DeferredBlock<Block> BIRCH_REVERSED_PLANKS = registerBlock("birch_reversed_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BIRCH_PLANKS)));
+    public static final DeferredBlock<Block> JUNGLE_REVERSED_PLANKS = registerBlock("jungle_reversed_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.JUNGLE_PLANKS)));
+    public static final DeferredBlock<Block> ACACIA_REVERSED_PLANKS = registerBlock("acacia_reversed_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS)));
+    public static final DeferredBlock<Block> DARK_OAK_REVERSED_PLANKS = registerBlock("dark_oak_reversed_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS)));
+    public static final DeferredBlock<Block> MANGROVE_REVERSED_PLANKS = registerBlock("mangrove_reversed_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MANGROVE_PLANKS).noOcclusion()));
+    public static final DeferredBlock<Block> CHERRY_REVERSED_PLANKS = registerBlock("cherry_reversed_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_PLANKS).noOcclusion()));
+    public static final DeferredBlock<Block> BAMBOO_REVERSED_PLANKS = registerBlock("bamboo_reversed_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS).noOcclusion()));
+    public static final DeferredBlock<Block> CRIMSON_REVERSED_PLANKS = registerBlock("crimson_reversed_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS).noOcclusion()));
+    public static final DeferredBlock<Block> WARPED_REVERSED_PLANKS = registerBlock("warped_reversed_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS).noOcclusion()));
+
     public static final DeferredBlock<Block> BARREL = registerBlock("barrel",
             () -> new BarrelBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BARREL).noOcclusion()));
 
