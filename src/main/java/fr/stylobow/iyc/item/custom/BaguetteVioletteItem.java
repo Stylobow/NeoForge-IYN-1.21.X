@@ -21,6 +21,8 @@ import net.minecraft.world.item.component.Fireworks;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.*;
+import net.minecraft.network.protocol.game.ClientboundSetEntityMotionPacket;
+import net.minecraft.network.protocol.game.ClientboundSetEntityMotionPacket;
 
 import java.util.List;
 
@@ -90,6 +92,10 @@ public class BaguetteVioletteItem extends Item {
 
                 target.setDeltaMovement(finalKnockback);
                 target.hasImpulse = true;
+
+                if (target instanceof ServerPlayer serverTarget) {
+                    serverTarget.connection.send(new ClientboundSetEntityMotionPacket(serverTarget));
+                }
             }
 
             level.playSound(null, player.getX(), player.getY(), player.getZ(),
