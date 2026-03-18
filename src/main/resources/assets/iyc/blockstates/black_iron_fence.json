@@ -1,0 +1,17 @@
+{
+    "multipart": [
+        {   "apply": { "model": "iyc:block/black_iron_fence_post" }},
+        {   "when": { "north": "true" },
+            "apply": { "model": "iyc:block/black_iron_fence_n", "uvlock": true }
+        },
+        {   "when": { "east": "true" },
+            "apply": { "model": "iyc:block/black_iron_fence_n", "y": 90, "uvlock": true }
+        },
+        {   "when": { "south": "true" },
+            "apply": { "model": "iyc:block/black_iron_fence_n", "y": 180, "uvlock": true }
+        },
+        {   "when": { "west": "true" },
+            "apply": { "model": "iyc:block/black_iron_fence_n", "y": 270, "uvlock": true }
+        }
+    ]
+}

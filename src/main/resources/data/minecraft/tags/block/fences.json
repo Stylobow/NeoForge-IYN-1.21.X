@@ -3,6 +3,22 @@
   "values": [
     "iyc:glowstone_fence",
     "iyc:log_fence",
-    "iyc:stone_fence"
+    "iyc:stone_fence",
+    "iyc:white_iron_fence",
+    "iyc:orange_iron_fence",
+    "iyc:magenta_iron_fence",
+    "iyc:light_blue_iron_fence",
+    "iyc:yellow_iron_fence",
+    "iyc:lime_iron_fence",
+    "iyc:pink_iron_fence",
+    "iyc:gray_iron_fence",
+    "iyc:light_gray_iron_fence",
+    "iyc:cyan_iron_fence",
+    "iyc:purple_iron_fence",
+    "iyc:blue_iron_fence",
+    "iyc:brown_iron_fence",
+    "iyc:green_iron_fence",
+    "iyc:red_iron_fence",
+    "iyc:black_iron_fence"
   ]
 }

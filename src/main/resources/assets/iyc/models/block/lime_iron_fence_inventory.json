@@ -1,0 +1,9 @@
+{
+  "parent": "iyc:block/fence_inventory",
+  "textures": {
+    "texture": "minecraft:block/iron_block",
+    "top": "minecraft:block/iron_block",
+    "bottom": "minecraft:block/iron_block",
+    "particle": "minecraft:block/iron_block"
+  }
+}

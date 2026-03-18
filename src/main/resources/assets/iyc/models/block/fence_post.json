@@ -1,0 +1,21 @@
+{
+    "textures": {
+        "texture": "minecraft:block/iron_block",
+        "top": "minecraft:block/iron_block",
+        "bottom": "minecraft:block/iron_block"
+    },
+    "elements": [
+        {   "from": [ 6, 0, 6 ],
+            "to": [ 10, 16, 10 ],
+            "faces": {
+                "down":  { "uv": [ 6, 6, 10, 10 ], "tintindex": 0, "texture": "#bottom", "cullface": "down" },
+                "up":    { "uv": [ 6, 6, 10, 10 ], "tintindex": 0, "texture": "#top" },
+                "north": { "uv": [ 6, 0, 10, 16 ], "tintindex": 0, "texture": "#texture" },
+                "south": { "uv": [ 6, 0, 10, 16 ], "tintindex": 0, "texture": "#texture" },
+                "west":  { "uv": [ 6, 0, 10, 16 ], "tintindex": 0, "texture": "#texture" },
+                "east":  { "uv": [ 6, 0, 10, 16 ], "tintindex": 0, "texture": "#texture" }
+            },
+            "__comment": "Center post"
+        }
+    ]
+}

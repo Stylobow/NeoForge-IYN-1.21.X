@@ -397,6 +397,39 @@ public class ModBlocks {
     public static final DeferredBlock<Block> BARREL = registerBlock("barrel",
             () -> new BarrelBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BARREL).noOcclusion()));
 
+    public static final DeferredBlock<Block> WHITE_IRON_FENCE = registerBlock("white_iron_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+    public static final DeferredBlock<Block> ORANGE_IRON_FENCE = registerBlock("orange_iron_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+    public static final DeferredBlock<Block> MAGENTA_IRON_FENCE = registerBlock("magenta_iron_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+    public static final DeferredBlock<Block> LIGHT_BLUE_IRON_FENCE = registerBlock("light_blue_iron_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+    public static final DeferredBlock<Block> YELLOW_IRON_FENCE = registerBlock("yellow_iron_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+    public static final DeferredBlock<Block> LIME_IRON_FENCE = registerBlock("lime_iron_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+    public static final DeferredBlock<Block> PINK_IRON_FENCE = registerBlock("pink_iron_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+    public static final DeferredBlock<Block> GRAY_IRON_FENCE = registerBlock("gray_iron_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+    public static final DeferredBlock<Block> LIGHT_GRAY_IRON_FENCE = registerBlock("light_gray_iron_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+    public static final DeferredBlock<Block> CYAN_IRON_FENCE = registerBlock("cyan_iron_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+    public static final DeferredBlock<Block> PURPLE_IRON_FENCE = registerBlock("purple_iron_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+    public static final DeferredBlock<Block> BLUE_IRON_FENCE = registerBlock("blue_iron_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+    public static final DeferredBlock<Block> BROWN_IRON_FENCE = registerBlock("brown_iron_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+    public static final DeferredBlock<Block> GREEN_IRON_FENCE = registerBlock("green_iron_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+    public static final DeferredBlock<Block> RED_IRON_FENCE = registerBlock("red_iron_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+    public static final DeferredBlock<Block> BLACK_IRON_FENCE = registerBlock("black_iron_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+
     public static final DeferredBlock<Block> WHITE_CLOUD = registerBlock("white_cloud", () -> new CloudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL).noCollission().noOcclusion(), 1.0F, 1.0F, 1.0F));
     public static final DeferredBlock<Block> ORANGE_CLOUD = registerBlock("orange_cloud", () -> new CloudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_WOOL).noCollission().noOcclusion(), 0.95F, 0.45F, 0.0F));
     public static final DeferredBlock<Block> MAGENTA_CLOUD = registerBlock("magenta_cloud", () -> new CloudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MAGENTA_WOOL).noCollission().noOcclusion(), 0.75F, 0.17F, 0.58F));
