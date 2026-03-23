@@ -11,22 +11,22 @@ import java.awt.Color;
 @EventBusSubscriber(modid = "iyc", bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ColorEvents {
 
-    public static final int C_WHITE      = 0xFFFFFF | 0xFF000000;
-    public static final int C_ORANGE     = 0xFF8130 | 0xFF000000;
-    public static final int C_MAGENTA    = 0xFF44FF | 0xFF000000;
-    public static final int C_LIGHT_BLUE = 0x30B0FF | 0xFF000000;
-    public static final int C_YELLOW     = 0xFFE730 | 0xFF000000;
-    public static final int C_LIME       = 0x2CFF2C | 0xFF000000;
-    public static final int C_PINK       = 0xFF69B4 | 0xFF000000;
-    public static final int C_GRAY       = 0x555555 | 0xFF000000;
-    public static final int C_LIGHT_GRAY = 0xAAAAAA | 0xFF000000;
-    public static final int C_CYAN       = 0x00AAAA | 0xFF000000;
-    public static final int C_PURPLE     = 0x850C99 | 0xFF000000;
-    public static final int C_BLUE       = 0x1111AA | 0xFF000000;
-    public static final int C_BROWN      = 0x8A4B19 | 0xFF000000;
-    public static final int C_GREEN      = 0x216E16 | 0xFF000000;
-    public static final int C_RED        = 0xCC1515 | 0xFF000000;
-    public static final int C_BLACK      = 0x202020 | 0xFF000000;
+    public static final int C_WHITE      = 0xF9FFFE | 0xFF000000;
+    public static final int C_ORANGE     = 0xF9801D | 0xFF000000;
+    public static final int C_MAGENTA    = 0xC74EBD | 0xFF000000;
+    public static final int C_LIGHT_BLUE = 0x3AB3DA | 0xFF000000;
+    public static final int C_YELLOW     = 0xFED83D | 0xFF000000;
+    public static final int C_LIME       = 0x80C71F | 0xFF000000;
+    public static final int C_PINK       = 0xF38BAA | 0xFF000000;
+    public static final int C_GRAY       = 0x474F52 | 0xFF000000;
+    public static final int C_LIGHT_GRAY = 0x9D9D97 | 0xFF000000;
+    public static final int C_CYAN       = 0x169C9C | 0xFF000000;
+    public static final int C_PURPLE     = 0x8932B8 | 0xFF000000;
+    public static final int C_BLUE       = 0x3C44AA | 0xFF000000;
+    public static final int C_BROWN      = 0x835432 | 0xFF000000;
+    public static final int C_GREEN      = 0x5E7C16 | 0xFF000000;
+    public static final int C_RED        = 0xB02E26 | 0xFF000000;
+    public static final int C_BLACK      = 0x1D1D21 | 0xFF000000;
 
     @SubscribeEvent
     public static void onBlockColors(RegisterColorHandlersEvent.Block event) {
