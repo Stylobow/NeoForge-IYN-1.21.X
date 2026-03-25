@@ -1,8 +1,8 @@
 {
   "comparator_output": 15,
   "description": {
-    "translate": "item.iyc.creep.desc"
+    "translate": "item.iyc.record_creep.desc"
   },
   "length_in_seconds": 199.0,
-  "sound_event": "iyc:creep"
+  "sound_event": "iyc:record_creep"
 }

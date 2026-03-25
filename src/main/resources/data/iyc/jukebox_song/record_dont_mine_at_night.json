@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.iyc.record_dont_mine_at_night.desc"
+  },
+  "length_in_seconds": 228.0,
+  "sound_event": "iyc:record_dont_mine_at_night"
+}

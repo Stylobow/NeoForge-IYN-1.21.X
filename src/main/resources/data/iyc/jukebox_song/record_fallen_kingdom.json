@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.iyc.record_fallen_kingdom.desc"
+  },
+  "length_in_seconds": 264.0,
+  "sound_event": "iyc:record_fallen_kingdom"
+}

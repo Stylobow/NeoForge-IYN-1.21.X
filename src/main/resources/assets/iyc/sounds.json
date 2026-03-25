@@ -1,200 +1,200 @@
 {
-  "take_back_night": {
+  "record_take_back_night": {
     "category": "record",
-    "subtitle": "subtitles.iyc.take_back_night",
+    "subtitle": "subtitles.iyc.record_take_back_night",
     "sounds": [
       {
-        "name": "iyc:take_back_night",
+        "name": "iyc:record_take_back_night",
         "stream": true
       }
     ]
   },
-  "zombies": {
+  "record_zombies": {
     "category": "record",
-    "subtitle": "subtitles.iyc.zombies",
+    "subtitle": "subtitles.iyc.record_zombies",
     "sounds": [
       {
-        "name": "iyc:zombies",
+        "name": "iyc:record_zombies",
         "stream": true
       }
     ]
   },
-  "chunks": {
+  "record_chunks": {
     "category": "record",
-    "subtitle": "subtitles.iyc.chunks",
+    "subtitle": "subtitles.iyc.record_chunks",
     "sounds": [
       {
-        "name": "iyc:chunks",
+        "name": "iyc:record_chunks",
         "stream": true
       }
     ]
   },
-  "creep": {
+  "record_creep": {
     "category": "record",
-    "subtitle": "subtitles.iyc.creep",
+    "subtitle": "subtitles.iyc.record_creep",
     "sounds": [
       {
-        "name": "iyc:creep",
+        "name": "iyc:record_creep",
         "stream": true
       }
     ]
   },
-  "nofragays": {
+  "record_nofragays": {
     "category": "record",
-    "subtitle": "subtitles.iyc.nofragays",
+    "subtitle": "subtitles.iyc.record_nofragays",
     "sounds": [
       {
-        "name": "iyc:nofragays",
+        "name": "iyc:record_nofragays",
         "stream": true
       }
     ]
   },
-  "sean_kevin": {
+  "record_sean_kevin": {
     "category": "record",
-    "subtitle": "subtitles.iyc.sean_kevin",
+    "subtitle": "subtitles.iyc.record_sean_kevin",
     "sounds": [
       {
-        "name": "iyc:sean_kevin",
+        "name": "iyc:record_sean_kevin",
         "stream": true
       }
     ]
   },
-  "give": {
+  "record_give": {
     "category": "record",
-    "subtitle": "subtitles.iyc.give",
+    "subtitle": "subtitles.iyc.record_give",
     "sounds": [
       {
-        "name": "iyc:give",
+        "name": "iyc:record_give",
         "stream": true
       }
     ]
   },
-  "pelles": {
+  "record_pelles": {
     "category": "record",
-    "subtitle": "subtitles.iyc.pelles",
+    "subtitle": "subtitles.iyc.record_pelles",
     "sounds": [
       {
-        "name": "iyc:pelles",
+        "name": "iyc:record_pelles",
         "stream": true
       }
     ]
   },
-  "geek": {
+  "record_geek": {
     "category": "record",
-    "subtitle": "subtitles.iyc.geek",
+    "subtitle": "subtitles.iyc.record_geek",
     "sounds": [
       {
-        "name": "iyc:geek",
+        "name": "iyc:record_geek",
         "stream": true
       }
     ]
   },
-  "acta": {
+  "record_acta": {
     "category": "record",
-    "subtitle": "subtitles.iyc.acta",
+    "subtitle": "subtitles.iyc.record_acta",
     "sounds": [
       {
-        "name": "iyc:acta",
+        "name": "iyc:record_acta",
         "stream": true
       }
     ]
   },
-  "touch": {
+  "record_touch": {
     "category": "record",
-    "subtitle": "subtitles.iyc.touch",
+    "subtitle": "subtitles.iyc.record_touch",
     "sounds": [
       {
-        "name": "iyc:touch",
+        "name": "iyc:record_touch",
         "stream": true
       }
     ]
   },
-  "mc_style": {
+  "record_mc_style": {
     "category": "record",
-    "subtitle": "subtitles.iyc.mc_style",
+    "subtitle": "subtitles.iyc.record_mc_style",
     "sounds": [
       {
-        "name": "iyc:mc_style",
+        "name": "iyc:record_mc_style",
         "stream": true
       }
     ]
   },
-  "bouge": {
+  "record_bouge": {
     "category": "record",
-    "subtitle": "subtitles.iyc.bouge",
+    "subtitle": "subtitles.iyc.record_bouge",
     "sounds": [
       {
-        "name": "iyc:bouge",
+        "name": "iyc:record_bouge",
         "stream": true
       }
     ]
   },
-  "sfr": {
+  "record_sfr": {
     "category": "record",
-    "subtitle": "subtitles.iyc.sfr",
+    "subtitle": "subtitles.iyc.record_sfr",
     "sounds": [
       {
-        "name": "iyc:sfr",
+        "name": "iyc:record_sfr",
         "stream": true
       }
     ]
   },
-  "revenge": {
+  "record_revenge": {
     "category": "record",
-    "subtitle": "subtitles.iyc.revenge",
+    "subtitle": "subtitles.iyc.record_revenge",
     "sounds": [
       {
-        "name": "iyc:revenge",
+        "name": "iyc:record_revenge",
         "stream": true
       }
     ]
   },
-  "fallen_kingdom": {
+  "record_fallen_kingdom": {
     "category": "record",
-    "subtitle": "subtitles.iyc.fallen_kingdom",
+    "subtitle": "subtitles.iyc.record_fallen_kingdom",
     "sounds": [
       {
-        "name": "iyc:fallen_kingdom",
+        "name": "iyc:record_fallen_kingdom",
         "stream": true
       }
     ]
   },
-  "tnt": {
+  "record_tnt": {
     "category": "record",
-    "subtitle": "subtitles.iyc.tnt",
+    "subtitle": "subtitles.iyc.record_tnt",
     "sounds": [
       {
-        "name": "iyc:tnt",
+        "name": "iyc:record_tnt",
         "stream": true
       }
     ]
   },
-  "gagaoutai": {
+  "record_gagaoutai": {
     "category": "record",
-    "subtitle": "subtitles.gagaoutai.tnt",
+    "subtitle": "subtitles.iyc.record_gagaoutai",
     "sounds": [
       {
-        "name": "iyc:gagaoutai",
+        "name": "iyc:record_gagaoutai",
         "stream": true
       }
     ]
   },
-  "the_miner": {
+  "record_the_miner": {
     "category": "record",
-    "subtitle": "subtitles.the_miner.tnt",
+    "subtitle": "subtitles.iyc.record_the_miner",
     "sounds": [
       {
-        "name": "iyc:the_miner",
+        "name": "iyc:record_the_miner",
         "stream": true
       }
     ]
   },
-  "dont_mine_at_night": {
+  "record_dont_mine_at_night": {
     "category": "record",
-    "subtitle": "subtitles.dont_mine_at_night.tnt",
+    "subtitle": "subtitles.iyc.record_dont_mine_at_night",
     "sounds": [
       {
-        "name": "iyc:dont_mine_at_night",
+        "name": "iyc:record_dont_mine_at_night",
         "stream": true
       }
     ]

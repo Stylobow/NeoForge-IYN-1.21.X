@@ -90,45 +90,45 @@ public class ModItems {
     public static final DeferredItem<Item> SLATE_ITEM = ITEMS.register("slate_item",
             () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item> RECORD_TAKE_BACK_NIGHT = ITEMS.register("take_back_night",
+    public static final DeferredItem<Item> RECORD_TAKE_BACK_NIGHT = ITEMS.register("record_take_back_night",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.TAKE_BACK_NIGHT_KEY).stacksTo(1).rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> RECORD_ZOMBIES = ITEMS.register("zombies",
+    public static final DeferredItem<Item> RECORD_ZOMBIES = ITEMS.register("record_zombies",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.ZOMBIES_KEY).stacksTo(1).rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> RECORD_CHUNKS = ITEMS.register("chunks",
+    public static final DeferredItem<Item> RECORD_CHUNKS = ITEMS.register("record_chunks",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.CHUNKS_KEY).stacksTo(1).rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> RECORD_CREEP = ITEMS.register("creep",
+    public static final DeferredItem<Item> RECORD_CREEP = ITEMS.register("record_creep",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.CREEP_KEY).stacksTo(1).rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> RECORD_NOFRAGAYS = ITEMS.register("nofragays",
+    public static final DeferredItem<Item> RECORD_NOFRAGAYS = ITEMS.register("record_nofragays",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.NOFRAGAYS_KEY).stacksTo(1).rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> RECORD_SEAN_KEVIN = ITEMS.register("sean_kevin",
+    public static final DeferredItem<Item> RECORD_SEAN_KEVIN = ITEMS.register("record_sean_kevin",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.SEAN_KEVIN_KEY).stacksTo(1).rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> RECORD_GIVE = ITEMS.register("give",
+    public static final DeferredItem<Item> RECORD_GIVE = ITEMS.register("record_give",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.GIVE_KEY).stacksTo(1).rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> RECORD_PELLES = ITEMS.register("pelles",
+    public static final DeferredItem<Item> RECORD_PELLES = ITEMS.register("record_pelles",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.PELLES_KEY).stacksTo(1).rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> RECORD_GEEK = ITEMS.register("geek",
+    public static final DeferredItem<Item> RECORD_GEEK = ITEMS.register("record_geek",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.GEEK_KEY).stacksTo(1).rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> RECORD_ACTA = ITEMS.register("acta",
+    public static final DeferredItem<Item> RECORD_ACTA = ITEMS.register("record_acta",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.ACTA_KEY).stacksTo(1).rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> RECORD_TOUCH = ITEMS.register("touch",
+    public static final DeferredItem<Item> RECORD_TOUCH = ITEMS.register("record_touch",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.TOUCH_KEY).stacksTo(1).rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> RECORD_MC_STYLE = ITEMS.register("mc_style",
+    public static final DeferredItem<Item> RECORD_MC_STYLE = ITEMS.register("record_mc_style",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.MC_STYLE_KEY).stacksTo(1).rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> RECORD_BOUGE = ITEMS.register("bouge",
+    public static final DeferredItem<Item> RECORD_BOUGE = ITEMS.register("record_bouge",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BOUGE_KEY).stacksTo(1).rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> RECORD_SFR = ITEMS.register("sfr",
+    public static final DeferredItem<Item> RECORD_SFR = ITEMS.register("record_sfr",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.SFR_KEY).stacksTo(1).rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> RECORD_REVENGE = ITEMS.register("revenge",
+    public static final DeferredItem<Item> RECORD_REVENGE = ITEMS.register("record_revenge",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.REVENGE_KEY).stacksTo(1).rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> RECORD_FALLEN_KINGDOM = ITEMS.register("fallen_kingdom",
+    public static final DeferredItem<Item> RECORD_FALLEN_KINGDOM = ITEMS.register("record_fallen_kingdom",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.FALLEN_KINGDOM_KEY).stacksTo(1).rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> RECORD_TNT = ITEMS.register("tnt",
+    public static final DeferredItem<Item> RECORD_TNT = ITEMS.register("record_tnt",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.TNT_KEY).stacksTo(1).rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> RECORD_GAGAOUTAI = ITEMS.register("gagaoutai",
+    public static final DeferredItem<Item> RECORD_GAGAOUTAI = ITEMS.register("record_gagaoutai",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.GAGAOUTAI_KEY).stacksTo(1).rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> RECORD_THE_MINER = ITEMS.register("the_miner",
+    public static final DeferredItem<Item> RECORD_THE_MINER = ITEMS.register("record_the_miner",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.THE_MINER_KEY).stacksTo(1).rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> RECORD_DONT_MINE_AT_NIGHT = ITEMS.register("dont_mine_at_night",
+    public static final DeferredItem<Item> RECORD_DONT_MINE_AT_NIGHT = ITEMS.register("record_dont_mine_at_night",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.DONT_MINE_AT_NIGHT_KEY).stacksTo(1).rarity(Rarity.RARE)));
 
     public static final DeferredItem<Item> SAPHIR_SWORD = ITEMS.register("saphir_sword",

@@ -1,8 +1,8 @@
 {
   "comparator_output": 15,
   "description": {
-    "translate": "item.iyc.give.desc"
+    "translate": "item.iyc.record_pelles.desc"
   },
   "length_in_seconds": 209.0,
-  "sound_event": "iyc:give"
+  "sound_event": "iyc:record_pelles"
 }

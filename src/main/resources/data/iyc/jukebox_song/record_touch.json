@@ -1,8 +1,8 @@
 {
   "comparator_output": 15,
   "description": {
-    "translate": "item.iyc.touch.desc"
+    "translate": "item.iyc.record_touch.desc"
   },
   "length_in_seconds": 240.0,
-  "sound_event": "iyc:touch"
+  "sound_event": "iyc:record_touch"
 }

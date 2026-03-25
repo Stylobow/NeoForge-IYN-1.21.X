@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.iyc.record_the_miner.desc"
+  },
+  "length_in_seconds": 252.0,
+  "sound_event": "iyc:record_the_miner"
+}
