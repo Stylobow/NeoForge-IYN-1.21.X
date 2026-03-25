@@ -40,6 +40,22 @@ public class ModSounds {
     public static final ResourceKey<JukeboxSong> TOUCH_KEY = createSong("touch");
     public static final Supplier<SoundEvent> MC_STYLE = registerSoundEvent("mc_style");
     public static final ResourceKey<JukeboxSong> MC_STYLE_KEY = createSong("mc_style");
+    public static final Supplier<SoundEvent> BOUGE = registerSoundEvent("bouge");
+    public static final ResourceKey<JukeboxSong> BOUGE_KEY = createSong("bouge");
+    public static final Supplier<SoundEvent> SFR = registerSoundEvent("sfr");
+    public static final ResourceKey<JukeboxSong> SFR_KEY = createSong("sfr");
+    public static final Supplier<SoundEvent> REVENGE = registerSoundEvent("revenge");
+    public static final ResourceKey<JukeboxSong> REVENGE_KEY = createSong("revenge");
+    public static final Supplier<SoundEvent> FALLEN_KINGDOM = registerSoundEvent("fallen_kingdom");
+    public static final ResourceKey<JukeboxSong> FALLEN_KINGDOM_KEY = createSong("fallen_kingdom");
+    public static final Supplier<SoundEvent> TNT = registerSoundEvent("tnt");
+    public static final ResourceKey<JukeboxSong> TNT_KEY = createSong("tnt");
+    public static final Supplier<SoundEvent> GAGAOUTAI = registerSoundEvent("gagaoutai");
+    public static final ResourceKey<JukeboxSong> GAGAOUTAI_KEY = createSong("gagaoutai");
+    public static final Supplier<SoundEvent> THE_MINER = registerSoundEvent("the_miner");
+    public static final ResourceKey<JukeboxSong> THE_MINER_KEY = createSong("the_miner");
+    public static final Supplier<SoundEvent> DONT_MINE_AT_NIGHT = registerSoundEvent("dont_mine_at_night");
+    public static final ResourceKey<JukeboxSong> DONT_MINE_AT_NIGHT_KEY = createSong("dont_mine_at_night");
 
     private static ResourceKey<JukeboxSong> createSong(String name) {
         return ResourceKey.create(Registries.JUKEBOX_SONG, ResourceLocation.fromNamespaceAndPath(ImagineYourCraft.MOD_ID, name));

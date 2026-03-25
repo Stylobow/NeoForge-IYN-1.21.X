@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.iyc.sfr.desc"
+  },
+  "length_in_seconds": 200.0,
+  "sound_event": "iyc:sfr"
+}

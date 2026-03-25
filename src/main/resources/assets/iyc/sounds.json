@@ -118,5 +118,85 @@
         "stream": true
       }
     ]
+  },
+  "bouge": {
+    "category": "record",
+    "subtitle": "subtitles.iyc.bouge",
+    "sounds": [
+      {
+        "name": "iyc:bouge",
+        "stream": true
+      }
+    ]
+  },
+  "sfr": {
+    "category": "record",
+    "subtitle": "subtitles.iyc.sfr",
+    "sounds": [
+      {
+        "name": "iyc:sfr",
+        "stream": true
+      }
+    ]
+  },
+  "revenge": {
+    "category": "record",
+    "subtitle": "subtitles.iyc.revenge",
+    "sounds": [
+      {
+        "name": "iyc:revenge",
+        "stream": true
+      }
+    ]
+  },
+  "fallen_kingdom": {
+    "category": "record",
+    "subtitle": "subtitles.iyc.fallen_kingdom",
+    "sounds": [
+      {
+        "name": "iyc:fallen_kingdom",
+        "stream": true
+      }
+    ]
+  },
+  "tnt": {
+    "category": "record",
+    "subtitle": "subtitles.iyc.tnt",
+    "sounds": [
+      {
+        "name": "iyc:tnt",
+        "stream": true
+      }
+    ]
+  },
+  "gagaoutai": {
+    "category": "record",
+    "subtitle": "subtitles.gagaoutai.tnt",
+    "sounds": [
+      {
+        "name": "iyc:gagaoutai",
+        "stream": true
+      }
+    ]
+  },
+  "the_miner": {
+    "category": "record",
+    "subtitle": "subtitles.the_miner.tnt",
+    "sounds": [
+      {
+        "name": "iyc:the_miner",
+        "stream": true
+      }
+    ]
+  },
+  "dont_mine_at_night": {
+    "category": "record",
+    "subtitle": "subtitles.dont_mine_at_night.tnt",
+    "sounds": [
+      {
+        "name": "iyc:dont_mine_at_night",
+        "stream": true
+      }
+    ]
   }
 }

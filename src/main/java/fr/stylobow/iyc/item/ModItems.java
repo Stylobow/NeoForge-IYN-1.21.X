@@ -114,6 +114,22 @@ public class ModItems {
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.TOUCH_KEY).stacksTo(1).rarity(Rarity.RARE)));
     public static final DeferredItem<Item> RECORD_MC_STYLE = ITEMS.register("mc_style",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.MC_STYLE_KEY).stacksTo(1).rarity(Rarity.RARE)));
+    public static final DeferredItem<Item> RECORD_BOUGE = ITEMS.register("bouge",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BOUGE_KEY).stacksTo(1).rarity(Rarity.RARE)));
+    public static final DeferredItem<Item> RECORD_SFR = ITEMS.register("sfr",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.SFR_KEY).stacksTo(1).rarity(Rarity.RARE)));
+    public static final DeferredItem<Item> RECORD_REVENGE = ITEMS.register("revenge",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.REVENGE_KEY).stacksTo(1).rarity(Rarity.RARE)));
+    public static final DeferredItem<Item> RECORD_FALLEN_KINGDOM = ITEMS.register("fallen_kingdom",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.FALLEN_KINGDOM_KEY).stacksTo(1).rarity(Rarity.RARE)));
+    public static final DeferredItem<Item> RECORD_TNT = ITEMS.register("tnt",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.TNT_KEY).stacksTo(1).rarity(Rarity.RARE)));
+    public static final DeferredItem<Item> RECORD_GAGAOUTAI = ITEMS.register("gagaoutai",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.GAGAOUTAI_KEY).stacksTo(1).rarity(Rarity.RARE)));
+    public static final DeferredItem<Item> RECORD_THE_MINER = ITEMS.register("the_miner",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.THE_MINER_KEY).stacksTo(1).rarity(Rarity.RARE)));
+    public static final DeferredItem<Item> RECORD_DONT_MINE_AT_NIGHT = ITEMS.register("dont_mine_at_night",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.DONT_MINE_AT_NIGHT_KEY).stacksTo(1).rarity(Rarity.RARE)));
 
     public static final DeferredItem<Item> SAPHIR_SWORD = ITEMS.register("saphir_sword",
             () -> new SwordItem(ModTiers.SAPHIR, new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.SAPHIR, 3, -2.4F))));
