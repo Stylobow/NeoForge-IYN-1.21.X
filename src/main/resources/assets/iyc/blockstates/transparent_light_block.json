@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "iyc:block/transparent_light_block" }
+  }
+}

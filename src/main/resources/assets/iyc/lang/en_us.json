@@ -262,6 +262,7 @@
   "block.iyc.water_effect_generator": "Particles block of water",
   "block.iyc.large_smoke_effect_generator": "Particles block of thick smoke",
   "block.iyc.heart_effect_generator": "Particles block of heart",
+  "block.iyc.transparent_light_block": "Bright transparent block",
   "block.iyc.red_block_ctf": "Red CTF block",
   "block.iyc.blue_block_ctf": "Red CTF block",
   "block.iyc.rod": "Rod",

@@ -1026,6 +1026,14 @@ public class ModBlocks {
                     .noLootTable()
                     .isValidSpawn((state, level, pos, type) -> false)));
 
+    public static final DeferredBlock<Block> TRANSPARENT_LIGHT_BLOCK = registerBlock("transparent_light_block",
+            () -> new TransparentLightBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BEDROCK)
+                    .noOcclusion()
+                    .lightLevel(state -> 15)
+                    .strength(-1.0F, 3600000.0F)
+                    .noLootTable()
+                    .isValidSpawn((state, level, pos, type) -> false)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
