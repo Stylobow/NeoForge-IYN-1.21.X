@@ -131,8 +131,8 @@ public static final DeferredRegister<CreativeModeTab>CREATIVE_MODE_TAB =
                         output.accept(ModBlocks.CHERRY_LOG_SLOPES);
                         output.accept(ModBlocks.MANGROVE_LOG_SLOPES);
                         output.accept(ModBlocks.BAMBOO_LOG_SLOPES);
-                        output.accept(ModBlocks.CRIMSON_LOG_SLOPES);
-                        output.accept(ModBlocks.WARPED_LOG_SLOPES);
+                        output.accept(ModBlocks.CRIMSON_STEM_SLOPES);
+                        output.accept(ModBlocks.WARPED_STEM_SLOPES);
                     }).build());
 
     public static final Supplier<CreativeModeTab>  IYC_DECORATIVE_TAB = CREATIVE_MODE_TAB.register("iyc_decorative_tab",

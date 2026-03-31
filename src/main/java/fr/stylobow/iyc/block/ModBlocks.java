@@ -391,9 +391,9 @@ public class ModBlocks {
             () -> new StairBlock(Blocks.CHERRY_PLANKS.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_PLANKS).noOcclusion()));
     public static final DeferredBlock<Block> BAMBOO_LOG_SLOPES = registerBlock("bamboo_log_slopes",
             () -> new StairBlock(Blocks.BAMBOO_PLANKS.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS).noOcclusion()));
-    public static final DeferredBlock<Block> CRIMSON_LOG_SLOPES = registerBlock("crimson_log_slopes",
+    public static final DeferredBlock<Block> CRIMSON_STEM_SLOPES = registerBlock("crimson_stem_slopes",
             () -> new StairBlock(Blocks.CRIMSON_PLANKS.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS).noOcclusion()));
-    public static final DeferredBlock<Block> WARPED_LOG_SLOPES = registerBlock("warped_log_slopes",
+    public static final DeferredBlock<Block> WARPED_STEM_SLOPES = registerBlock("warped_stem_slopes",
             () -> new StairBlock(Blocks.WARPED_PLANKS.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS).noOcclusion()));
 
     public static final DeferredBlock<Block> BARREL = registerBlock("barrel",
