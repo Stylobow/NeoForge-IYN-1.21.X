@@ -294,6 +294,20 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> LOG_STAIRS = registerBlock("log_stairs",
             () -> new StairBlock(Blocks.OAK_PLANKS.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
+    public static final DeferredBlock<Block> GLOWSTONE_STAIRS = registerBlock("glowstone_stairs",
+            () -> new StairBlock(Blocks.GLOWSTONE.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)));
+    public static final DeferredBlock<Block> IRON_STAIRS = registerBlock("iron_stairs",
+            () -> new StairBlock(Blocks.IRON_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+    public static final DeferredBlock<Block> OBSIDIAN_STAIRS = registerBlock("obsidian_stairs",
+            () -> new StairBlock(Blocks.OBSIDIAN.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN)));
+    public static final DeferredBlock<Block> GLASS_STAIRS = registerBlock("glass_stairs",
+            () -> new StairBlock(Blocks.GLASS.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)));
+    public static final DeferredBlock<Block> SMOOTH_STONE_STAIRS = registerBlock("smooth_stone_stairs",
+            () -> new StairBlock(Blocks.SMOOTH_STONE.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_STONE)));
+    public static final DeferredBlock<Block> SLATE_STAIRS = registerBlock("slate_stairs",
+            () -> new StairBlock(ModBlocks.SLATE_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.SLATE_BLOCK.get())));
+
+
 
     public static final DeferredBlock<Block> CHERRY_PLANKS = registerBlock("cherry_planks",
             () -> new Block(BlockBehaviour.Properties.of()

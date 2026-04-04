@@ -107,6 +107,12 @@ public static final DeferredRegister<CreativeModeTab>CREATIVE_MODE_TAB =
                         output.accept(ModBlocks.STONE_WALL);
                         output.accept(ModBlocks.GLOWSTONE_WALL);
                         output.accept(ModBlocks.SLATE_WALL);
+                        output.accept(ModBlocks.GLOWSTONE_STAIRS);
+                        output.accept(ModBlocks.IRON_STAIRS);
+                        output.accept(ModBlocks.OBSIDIAN_STAIRS);
+                        output.accept(ModBlocks.GLASS_STAIRS);
+                        output.accept(ModBlocks.SMOOTH_STONE_STAIRS);
+                        output.accept(ModBlocks.SLATE_STAIRS);
                         output.accept(ModBlocks.STONE_SLOPES);
                         output.accept(ModBlocks.SLATE_SLOPES);
                         output.accept(ModBlocks.SANDSTONE_SLOPES);
