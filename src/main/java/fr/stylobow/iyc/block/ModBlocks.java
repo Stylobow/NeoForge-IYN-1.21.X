@@ -413,6 +413,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> WARPED_STEM_SLOPES = registerBlock("warped_stem_slopes",
             () -> new StairBlock(Blocks.WARPED_PLANKS.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS).noOcclusion()));
 
+    public static final DeferredBlock<Block> CLEAR_GLASS = registerBlock("clear_glass",
+            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)));
+
     public static final DeferredBlock<Block> BARREL = registerBlock("barrel",
             () -> new BarrelBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BARREL).noOcclusion()));
 
