@@ -23,7 +23,7 @@ However, this isn't just a nostalgic copy-paste! This version has been **redesig
 * **New Ores & Materials:** Topaze, Rubis, Saphire, Adamantium, etc.
 * **Decorative & Colored Blocks:** Optimized colored iron blocks, multicolored redstone lamps, and much more...
 * **Furniture Blocks:** Chairs, Tables, Stools, Benches… have been created and are usable in all types of wood.
-* **Custom Interface (HUD):** Fully integrated and optimized in-game Keystrokes (CPS) system, Custom Skin/Capes HD supported and some cool features.
+* **Custom Interface (HUD):** Fully integrated and optimized in-game Keystrokes (CPS) system, Custom Skin/Capes/HAT HD supported and some cool features.
 ---
 
 ## ⚠️ Development Status
