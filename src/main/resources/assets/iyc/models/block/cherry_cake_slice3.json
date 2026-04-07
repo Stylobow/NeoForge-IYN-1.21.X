@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cake_slice3",
+  "textures": {
+    "particle": "iyc:block/cherry_cake_side",
+    "bottom": "iyc:block/cherry_cake_bottom",
+    "top": "iyc:block/cherry_cake_top",
+    "side": "iyc:block/cherry_cake_side",
+    "inside": "iyc:block/cherry_cake_inner"
+  }
+}

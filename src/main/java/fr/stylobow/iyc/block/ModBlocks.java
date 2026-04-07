@@ -1166,6 +1166,12 @@ public class ModBlocks {
                     .noLootTable()
                     .isValidSpawn((state, level, pos, type) -> false)));
 
+    public static final DeferredBlock<Block> CHERRY_CAKE = BLOCKS.register("cherry_cake",
+            () -> new CakeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE)));
+
+    public static final DeferredItem<Item> CHERRY_CAKE_ITEM = ITEMS.register("cherry_cake",
+            () -> new BlockItem(CHERRY_CAKE.get(), new Item.Properties().stacksTo(1)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
