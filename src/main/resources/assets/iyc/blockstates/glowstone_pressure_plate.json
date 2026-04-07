@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "iyc:block/glowstone_pressure_plate" },
+    "powered=true": { "model": "iyc:block/glowstone_pressure_plate_down" }
+  }
+}

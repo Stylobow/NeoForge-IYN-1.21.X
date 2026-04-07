@@ -505,6 +505,13 @@ public class ModBlocks {
     public static final DeferredBlock<Block> WARPED_STEM_SLOPES = registerBlock("warped_stem_slopes",
             () -> new StairBlock(Blocks.WARPED_PLANKS.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS).noOcclusion()));
 
+    public static final DeferredBlock<Block> GLOWSTONE_PRESSURE_PLATE = registerBlock("glowstone_pressure_plate",
+            () -> new PressurePlateBlock(
+                    BlockSetType.GOLD,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)
+                            .noOcclusion()
+            ));
+
     public static final DeferredBlock<Block> CLEAR_GLASS = registerBlock("clear_glass",
             () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)));
 
