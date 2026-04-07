@@ -71,12 +71,17 @@ public class FloatingItemLayer extends RenderLayer<AbstractClientPlayer, PlayerM
 
             float alphaFloat = (float) (Math.sin(rotationDeg / 30.0) * 0.40f + 0.45f);
             int a = (int) (alphaFloat * 255);
+
             int r = 0, g = 0, b = 128;
+
+            com.mojang.blaze3d.systems.RenderSystem.lineWidth(1.0F);
 
             VertexConsumer consumer = buffer.getBuffer(RenderType.lines());
             float baseSize = 0.7f;
 
             drawTardisWireframe(poseStack, consumer, baseSize, r, g, b, a);
+
+            com.mojang.blaze3d.systems.RenderSystem.lineWidth(2.0F);
 
             poseStack.popPose();
         }
@@ -105,7 +110,7 @@ public class FloatingItemLayer extends RenderLayer<AbstractClientPlayer, PlayerM
         drawTardizedBoxRadius(consumer, pose, f6, f4 + f9, f4 + f9 + f7, r, g, b, a);
         drawTardizedBoxRadius(consumer, pose, f8, f4 + f7 + f9, f4 + f7 + f10, r, g, b, a);
         drawTardizedBoxRadius(consumer, pose, f12, f4 + f7 + f10, f4 + f7 + f11, r, g, b, a);
-        drawTardizedBoxRadius(consumer, pose, f15, f4 + f7 + f13, f4 + f7 + f14, r, g, b, a);
+        drawTardizedBoxRadius(consumer, pose, f15, f4 + f7 + f13, f4 + f7 + f14, 255, 255, 255, a);
         drawTardizedBoxRadius(consumer, pose, f18, f4 + f7 + f16, f4 + f7 + f17, r, g, b, a);
 
         poseStack.pushPose();
