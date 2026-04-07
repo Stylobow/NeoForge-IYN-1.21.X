@@ -14,10 +14,15 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.util.ColorRGBA;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.StandingAndWallBlockItem;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -375,6 +380,37 @@ public class ModBlocks {
             () -> new FireCampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS).lightLevel(state -> 15)));
     public static final DeferredBlock<Block> SANDSTONE_FIRE_CAMP = registerBlock("sandstone_fire_camp",
             () -> new FireCampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE).lightLevel(state -> 15)));
+
+    public static final DeferredBlock<Block> BLUE_FLOWER = registerBlock("blue_flower",
+            () -> new FlowerBlock(MobEffects.POISON, 5.0f, BlockBehaviour.Properties.ofFullCopy(Blocks.POPPY)) {
+                @Override
+                public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
+                    if (!level.isClientSide() && entity instanceof LivingEntity livingEntity) {
+                        livingEntity.addEffect(new MobEffectInstance(MobEffects.POISON, 110, 0));
+                    }
+                    super.entityInside(state, level, pos, entity);
+                }
+            });
+    public static final DeferredBlock<Block> WHITE_FLOWER = registerBlock("white_flower",
+            () -> new FlowerBlock(MobEffects.MOVEMENT_SLOWDOWN, 5.0f, BlockBehaviour.Properties.ofFullCopy(Blocks.POPPY)) {
+                @Override
+                public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
+                    if (!level.isClientSide() && entity instanceof LivingEntity livingEntity) {
+                        livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 110, 0));
+                    }
+                    super.entityInside(state, level, pos, entity);
+                }
+            });
+    public static final DeferredBlock<Block> BLACK_FLOWER = registerBlock("black_flower",
+            () -> new FlowerBlock(MobEffects.BLINDNESS, 5.0f, BlockBehaviour.Properties.ofFullCopy(Blocks.POPPY)) {
+                @Override
+                public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
+                    if (!level.isClientSide() && entity instanceof LivingEntity livingEntity) {
+                        livingEntity.hurt(level.damageSources().cactus(), 1.0F);
+                    }
+                    super.entityInside(state, level, pos, entity);
+                }
+            });
 
     public static final DeferredBlock<Block> STONE_SLOPES = registerBlock("stone_slopes",
             () -> new StairBlock(Blocks.STONE.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));

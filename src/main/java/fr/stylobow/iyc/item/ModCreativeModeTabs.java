@@ -66,6 +66,9 @@ public static final DeferredRegister<CreativeModeTab>CREATIVE_MODE_TAB =
                         output.accept(ModBlocks.MASSIVE_OBSIDIAN_BLOCK);
                         output.accept(ModBlocks.SLATE_BLOCK);
                         output.accept(ModBlocks.ADAMANTIUM_BLOCK);
+                        output.accept(ModBlocks.BLUE_FLOWER);
+                        output.accept(ModBlocks.WHITE_FLOWER);
+                        output.accept(ModBlocks.BLACK_FLOWER);
                         output.accept(ModBlocks.COBBLESTONE_FIRE_CAMP);
                         output.accept(ModBlocks.SMOOTH_STONE_FIRE_CAMP);
                         output.accept(ModBlocks.BRICKS_FIRE_CAMP);
