@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "iyc:glowstone_fence_gate",
+    "iyc:log_fence_gate",
+    "iyc:stone_fence_gate",
+    "iyc:iron_fence_gate"
+  ]
+}

@@ -26,7 +26,9 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
@@ -411,6 +413,42 @@ public class ModBlocks {
                     super.entityInside(state, level, pos, entity);
                 }
             });
+
+    public static final DeferredBlock<Block> STONE_TRAPDOOR = registerBlock("stone_trapdoor",
+            () -> new TrapDoorBlock(
+                    BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).noOcclusion()
+            ));
+    public static final DeferredBlock<Block> GLOWSTONE_TRAPDOOR = registerBlock("glowstone_trapdoor",
+            () -> new TrapDoorBlock(
+                    BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE).noOcclusion()
+            ));
+
+    public static final DeferredBlock<Block> GLOWSTONE_FENCE_GATE = registerBlock("glowstone_fence_gate",
+            () -> new FenceGateBlock(
+                    WoodType.OAK,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)
+                            .noOcclusion()
+            ));
+    public static final DeferredBlock<Block> LOG_FENCE_GATE = registerBlock("log_fence_gate",
+            () -> new FenceGateBlock(
+                    WoodType.OAK,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion()
+                            .noOcclusion()
+            ));
+    public static final DeferredBlock<Block> STONE_FENCE_GATE = registerBlock("stone_fence_gate",
+            () -> new FenceGateBlock(
+                    WoodType.OAK,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).noOcclusion()
+                            .noOcclusion()
+            ));
+    public static final DeferredBlock<Block> IRON_FENCE_GATE = registerBlock("iron_fence_gate",
+            () -> new FenceGateBlock(
+                    WoodType.OAK,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).noOcclusion()
+                            .noOcclusion()
+            ));
 
     public static final DeferredBlock<Block> STONE_SLOPES = registerBlock("stone_slopes",
             () -> new StairBlock(Blocks.STONE.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
