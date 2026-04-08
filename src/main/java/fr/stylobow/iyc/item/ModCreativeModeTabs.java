@@ -327,6 +327,7 @@ public static final DeferredRegister<CreativeModeTab>CREATIVE_MODE_TAB =
                         output.accept(ModItems.RECORD_DONT_MINE_AT_NIGHT);
                         output.accept(ModItems.RECORD_GIRL_CRAFTY);
                         output.accept(ModItems.SLATE_ITEM);
+                        output.accept(ModBlocks.STEEL_BREWING_STAND);
                         output.accept(ModItems.ADAMANTIUM_FRAGMENT);
                         output.accept(ModItems.ROCK);
                     }).build());

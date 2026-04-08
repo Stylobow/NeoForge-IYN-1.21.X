@@ -1166,6 +1166,9 @@ public class ModBlocks {
                     .noLootTable()
                     .isValidSpawn((state, level, pos, type) -> false)));
 
+    public static final DeferredBlock<Block> STEEL_BREWING_STAND = registerBlock("steel_brewing_stand",
+            () -> new SteelBrewingStandBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BREWING_STAND)));
+
     public static final DeferredBlock<Block> CHERRY_CAKE = BLOCKS.register("cherry_cake",
             () -> new CakeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE)));
 

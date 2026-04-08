@@ -1,11 +1,14 @@
 package fr.stylobow.iyc.event;
 
+import fr.stylobow.iyc.block.ModBlocks;
 import fr.stylobow.iyc.block.entity.ModEntities;
 import fr.stylobow.iyc.client.model.HatModel;
 import fr.stylobow.iyc.client.renderer.layer.HatLayer;
 import fr.stylobow.iyc.entity.BoltEntity;
 import fr.stylobow.iyc.item.ModItems;
 import fr.stylobow.iyc.overlay.KeystrokesOverlay;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.ArrowRenderer;
 import net.minecraft.client.renderer.entity.player.PlayerRenderer;
 import net.minecraft.client.renderer.item.ItemProperties;
@@ -61,6 +64,7 @@ public class ModClientEvents {
                 return entity != null && CrossbowItem.isCharged(stack) ? 1.0F : 0.0F;
             });
         });
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_BREWING_STAND.get(), RenderType.cutout());
     }
 
     @SubscribeEvent

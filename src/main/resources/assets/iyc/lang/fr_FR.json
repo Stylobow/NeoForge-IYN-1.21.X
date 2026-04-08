@@ -39,6 +39,7 @@
   "iyc.music.done": "Terminé",
   "iyc.menu.barrel": "Tonneau",
   "container.iyc.iron_furnace": "Four en fer",
+  "container.iyc.steel_brewing_stand": "Alambic en acier",
 
   "creative.iyc.blocks": "Blocs d'IYC",
   "creative.iyc.decorative": "Blocs de décoration d'IYC",
@@ -563,6 +564,7 @@
   "block.iyc.cobblestone_little_table": "Table basse en pierre",
   "block.iyc.stone_brick_little_table": "Table basse en pierre taillée",
   "block.iyc.deepslate_brick_little_table": "Table basse en ardoise des abîmes taillée",
+  "block.iyc.steel_brewing_stand": "Alambic en acier",
 
   "subtitles.iyc.record_take_back_night": "CaptainSparklez - Take Back The Night",
   "item.iyc.record_take_back_night.desc": "CaptainSparklez - Take Back The Night",

@@ -39,6 +39,7 @@
   "iyc.music.done": "Done",
   "iyc.menu.barrel": "Barrel",
   "container.iyc.iron_furnace": "Iron Furnace",
+  "container.iyc.steel_brewing_stand": "Steel Brewing Stand",
 
   "creative.iyc.blocks": "Blocks of IYC",
   "creative.iyc.decorative": "Decoration blocks of IYC",
@@ -563,6 +564,7 @@
   "block.iyc.cobblestone_little_table": "Cobblestone Coffee Table",
   "block.iyc.stone_brick_little_table": "Stone Brick Coffee Table",
   "block.iyc.deepslate_brick_little_table": "Deepslate Brick Coffee Table",
+  "block.iyc.steel_brewing_stand": "Steel Brewing Stand",
 
   "subtitles.iyc.record_take_back_night": "CaptainSparklez - Take Back The Night",
   "item.iyc.record_take_back_night.desc": "CaptainSparklez - Take Back The Night",
