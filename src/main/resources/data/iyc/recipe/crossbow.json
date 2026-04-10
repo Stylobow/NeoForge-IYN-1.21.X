@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "iyc:steel_stick"
+    },
+    "S": {
+      "item": "minecraft:string"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    " #S",
+    "#DS",
+    " #S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "iyc:crossbow"
+  }
+}

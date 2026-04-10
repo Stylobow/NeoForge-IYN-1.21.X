@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:crimson_stem"
+    }
+  },
+  "pattern": [
+    "  #",
+    " # ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "iyc:crimson_stem_slopes"
+  }
+}

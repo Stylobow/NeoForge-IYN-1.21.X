@@ -3,16 +3,18 @@
   "category": "misc",
   "key": {
     "X": {
-      "item": "iyc:rubis"
+      "item": "minecraft:sandstone_slab"
+    },
+    "F": {
+      "item": "minecraft:fire_charge"
     }
   },
   "pattern": [
-    "XXX",
-    "XXX",
+    "XFX",
     "XXX"
   ],
   "result": {
     "count": 1,
-    "id": "iyc:rubis_block"
+    "id": "iyc:sandstone_fire_camp"
   }
 }

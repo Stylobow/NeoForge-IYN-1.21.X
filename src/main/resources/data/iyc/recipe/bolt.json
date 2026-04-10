@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "F": {
+      "item": "minecraft:flint"
+    },
+    "S": {
+      "item": "iyc:steel_stick"
+    },
+    "E": {
+      "item": "minecraft:feather"
+    }
+  },
+  "pattern": [
+    "F",
+    "S",
+    "E"
+  ],
+  "result": {
+    "count": 4,
+    "id": "iyc:bolt"
+  }
+}

@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "X": {
-      "item": "iyc:rubis"
+      "item": "iyc:obsidian_ingot"
     }
   },
   "pattern": [
@@ -13,6 +13,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "iyc:rubis_block"
+    "id": "iyc:massive_obsidian_block"
   }
 }

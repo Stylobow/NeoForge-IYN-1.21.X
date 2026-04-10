@@ -3,16 +3,19 @@
   "category": "misc",
   "key": {
     "X": {
-      "item": "iyc:rubis"
+      "item": "minecraft:iron_ingot"
+    },
+    "F": {
+      "item": "minecraft:furnace"
     }
   },
   "pattern": [
     "XXX",
-    "XXX",
+    "XFX",
     "XXX"
   ],
   "result": {
     "count": 1,
-    "id": "iyc:rubis_block"
+    "id": "iyc:iron_furnace"
   }
 }
