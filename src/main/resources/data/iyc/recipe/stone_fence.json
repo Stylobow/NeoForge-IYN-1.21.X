@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:stone"
+    },
+    "G": {
+      "item": "iyc:stone_stick"
+    }
+  },
+  "pattern": [
+    "#G#",
+    "#G#"
+  ],
+  "result": {
+    "count": 3,
+    "id": "iyc:stone_fence"
+  }
+}

@@ -62,15 +62,15 @@ public class FloatingItemLayer extends RenderLayer<AbstractClientPlayer, PlayerM
 
             poseStack.mulPose(Axis.XP.rotationDegrees(180.0F));
 
-            float heightOffset = player.isCrouching() ? 0F : .35F;
+            float heightOffset = player.isCrouching() ? -0.3F : .05f;
             poseStack.translate(0.0F, heightOffset, 0.0F);
 
             float gameTime = ageInTicks + partialTick;
             float rotationDeg = gameTime * 4.0F;
             poseStack.mulPose(Axis.YP.rotationDegrees(rotationDeg));
 
-            float alphaFloat = (float) (Math.sin(rotationDeg / 30.0) * 0.40f + 0.45f);
-            int a = (int) (alphaFloat * 255);
+            float alphaFloat = (float) (Math.sin(rotationDeg / 22.5) * 0.40f + 0.45f);
+            int a = (int) (alphaFloat * 300);
 
             int r = 0, g = 0, b = 128;
 

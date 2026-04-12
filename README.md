@@ -31,7 +31,7 @@ However, this isn't just a nostalgic copy-paste! This version has been **redesig
 **This project is currently an active Work In Progress (WIP).**
 
 At this time, **no playable version (`.jar`) is available for download.** The mod will only be officially published in its 1.0 (Release) version once all the content is finished and stable. This includes:
-- [ ] Adding all planned blocks and items.
+- [X] Adding all planned blocks and items.
 - [ ] Configuring all loot tables.
 - [ ] Integrating all crafting recipes.
 - [ ] Complete survival compatibility testing.

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "G": {
+      "item": "iyc:stone_stick"
+    }
+  },
+  "pattern": [
+    "G#G",
+    "G#G"
+  ],
+  "result": {
+    "count": 1,
+    "id": "iyc:iron_fence_gate"
+  }
+}
