@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": {
+      "item": "iyc:rubis"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "XX ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "iyc:rubis_hoe"
+  }
+}
