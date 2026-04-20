@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": {
+      "item": "iyc:saphir"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "XX ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "iyc:saphir_hoe"
+  }
+}
