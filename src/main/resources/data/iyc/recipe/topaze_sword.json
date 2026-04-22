@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": {
+      "item": "iyc:topaze"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " X ",
+    " X ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "iyc:topaze_sword"
+  }
+}
