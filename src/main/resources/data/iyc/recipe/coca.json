@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "iyc:cafeine" },
+    { "item": "iyc:cola" },
+    { "item": "iyc:canette" }
+  ],
+  "result": {
+    "count": 1,
+    "id": "iyc:coca"
+  }
+}

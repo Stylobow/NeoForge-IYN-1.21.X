@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:glass"
+    },
+    "N": {
+      "item": "minecraft:cocoa_beans"
+    }
+  },
+  "pattern": [
+    "#N#",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "iyc:chocolat_chaud"
+  }
+}

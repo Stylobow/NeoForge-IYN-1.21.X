@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "iyc:empty_glass"
+    },
+    "N": {
+      "item": "minecraft:apple"
+    }
+  },
+  "pattern": [
+    "N",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "iyc:apple_juice"
+  }
+}

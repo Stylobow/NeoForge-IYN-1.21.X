@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:bread"
+    },
+    "N": {
+      "item": "iyc:nutella"
+    }
+  },
+  "pattern": [
+    "N",
+    "#"
+  ],
+  "result": {
+    "count": 2,
+    "id": "iyc:tartine_nutella"
+  }
+}

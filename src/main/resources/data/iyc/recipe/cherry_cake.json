@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:cake"
+    },
+    "N": {
+      "item": "iyc:cherry"
+    }
+  },
+  "pattern": [
+    "N",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "iyc:cherry_cake"
+  }
+}

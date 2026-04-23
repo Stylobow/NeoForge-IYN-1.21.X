@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "iyc:hops" },
+    { "item": "iyc:choppe" }
+  ],
+  "result": {
+    "count": 1,
+    "id": "iyc:biere"
+  }
+}
