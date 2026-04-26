@@ -300,10 +300,21 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)));
 
     public static final DeferredBlock<Block> LIGNITE_TORCH = BLOCKS.register("lignite_torch",
-            () -> new TorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.ofFullCopy(ModBlocks.LIGNITE_BLOCK.get()).noCollission().instabreak().lightLevel((state) -> 14).pushReaction(PushReaction.DESTROY)));
+            () -> new TorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of()
+                    .noCollission()
+                    .instabreak()
+                    .lightLevel((state) -> 14)
+                    .sound(SoundType.METAL)
+                    .pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<Block> LIGNITE_WALL_TORCH = BLOCKS.register("lignite_torch_wall",
-            () -> new WallTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.ofFullCopy(ModBlocks.LIGNITE_BLOCK.get()).noCollission().instabreak().lightLevel((state) -> 14).lootFrom(LIGNITE_TORCH).pushReaction(PushReaction.DESTROY)));
+            () -> new WallTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of()
+                    .noCollission()
+                    .instabreak()
+                    .lightLevel((state) -> 14)
+                    .sound(SoundType.METAL)
+                    .lootFrom(LIGNITE_TORCH)
+                    .pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredItem<Item> LIGNITE_TORCH_ITEM = ITEMS.register("lignite_torch",
             () -> new StandingAndWallBlockItem(LIGNITE_TORCH.get(), LIGNITE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
