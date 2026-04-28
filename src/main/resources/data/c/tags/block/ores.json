@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "iyc:rubis_ore",
+    "iyc:deepslate_rubis_ore",
+    "iyc:topaze_ore",
+    "iyc:deepslate_topaze_ore",
+    "iyc:saphir_ore",
+    "iyc:deepslate_saphir_ore",
+    "iyc:lignite_ore",
+    "iyc:steel_ore",
+    "iyc:slate_ore",
+    "iyc:deepslate_slate_ore",
+    "iyc:adamantium_ore",
+    "iyc:deepslate_adamantium_ore"
+  ]
+}

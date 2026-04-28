@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#iyc:is_slate_area",
+  "features": "iyc:slate_ore",
+  "step": "underground_ores"
+}

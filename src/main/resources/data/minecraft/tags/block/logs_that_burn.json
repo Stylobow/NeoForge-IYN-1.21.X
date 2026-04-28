@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "iyc:cherry_log",
+    "iyc:birch_lantern",
+    "iyc:spruce_lantern",
+    "iyc:oak_lantern",
+    "iyc:jungle_lantern",
+    "iyc:acacia_lantern",
+    "iyc:dark_oak_lantern",
+    "iyc:mangrove_lantern",
+    "iyc:cherry_lantern",
+    "iyc:bamboo_lantern"
+  ]
+}
