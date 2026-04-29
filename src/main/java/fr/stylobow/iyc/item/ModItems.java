@@ -4,7 +4,6 @@ import fr.stylobow.iyc.ImagineYourCraft;
 import fr.stylobow.iyc.block.ModBlocks;
 import fr.stylobow.iyc.item.custom.*;
 import fr.stylobow.iyc.sound.ModSounds;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;

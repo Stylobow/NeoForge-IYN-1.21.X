@@ -11,6 +11,7 @@ import fr.stylobow.iyc.item.ModCreativeModeTabs;
 import fr.stylobow.iyc.item.ModItems;
 import fr.stylobow.iyc.screen.ModMenuTypes;
 import fr.stylobow.iyc.sound.ModSounds;
+import fr.stylobow.iyc.worldgen.feature.ModFeatures;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
@@ -45,6 +46,7 @@ public class ImagineYourCraft {
         ModArmorMaterials.ARMOR_MATERIALS.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModAttachmentTypes.ATTACHMENT_TYPES.register(modEventBus);
+        ModFeatures.FEATURES.register(modEventBus);
 
         ModMenuTypes.MENUS.register(modEventBus);
 
