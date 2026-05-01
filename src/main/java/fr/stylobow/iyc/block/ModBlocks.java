@@ -515,7 +515,7 @@ public class ModBlocks {
             () -> new StairBlock(Blocks.MANGROVE_PLANKS.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.MANGROVE_PLANKS).noOcclusion()));
     public static final DeferredBlock<Block> CHERRY_LOG_SLOPES = registerBlock("cherry_log_slopes",
             () -> new StairBlock(Blocks.CHERRY_PLANKS.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_PLANKS).noOcclusion()));
-    public static final DeferredBlock<Block> BAMBOO_LOG_SLOPES = registerBlock("bamboo_log_slopes",
+    public static final DeferredBlock<Block> BAMBOO_BLOCK_SLOPES = registerBlock("bamboo_block_slopes",
             () -> new StairBlock(Blocks.BAMBOO_PLANKS.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS).noOcclusion()));
     public static final DeferredBlock<Block> CRIMSON_STEM_SLOPES = registerBlock("crimson_stem_slopes",
             () -> new StairBlock(Blocks.CRIMSON_PLANKS.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS).noOcclusion()));

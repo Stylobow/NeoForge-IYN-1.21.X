@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "iyc:bamboo_log_slopes"
+          "name": "iyc:bamboo_block_slopes"
         }
       ],
       "conditions": [

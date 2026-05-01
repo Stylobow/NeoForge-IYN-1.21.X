@@ -137,7 +137,7 @@ public static final DeferredRegister<CreativeModeTab>CREATIVE_MODE_TAB =
                         output.accept(ModBlocks.DARK_OAK_LOG_SLOPES);
                         output.accept(ModBlocks.CHERRY_LOG_SLOPES);
                         output.accept(ModBlocks.MANGROVE_LOG_SLOPES);
-                        output.accept(ModBlocks.BAMBOO_LOG_SLOPES);
+                        output.accept(ModBlocks.BAMBOO_BLOCK_SLOPES);
                         output.accept(ModBlocks.CRIMSON_STEM_SLOPES);
                         output.accept(ModBlocks.WARPED_STEM_SLOPES);
                         output.accept(ModBlocks.CLEAR_GLASS);
