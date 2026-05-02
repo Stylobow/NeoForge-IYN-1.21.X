@@ -278,7 +278,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS).lightLevel(p_152686_ -> 15)));
     public static  final DeferredBlock<Block> IRON_LANTERN = registerBlock("iron_lantern", ()-> new Block(getLanternProperties().mapColor(MapColor.COLOR_LIGHT_GRAY)));
 
-    public static final DeferredBlock<Block> IRON_LADDER = registerBlock("iron_ladder", () -> new IronLadderBlock(BlockBehaviour.Properties.of().noCollission().strength(2.0F).sound(SoundType.METAL).noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> IRON_LADDER = registerBlock("iron_ladder", () -> new IronLadderBlock(BlockBehaviour.Properties.of().noCollission().strength(2.0F).sound(SoundType.METAL).noOcclusion().requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY).forceSolidOff()));
 
     public static final DeferredBlock<Block> GLOWSTONE_FENCE = registerBlock("glowstone_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)));

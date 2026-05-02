@@ -48,7 +48,7 @@ public class FireCampBlock extends Block {
             if (entity instanceof ItemEntity) {
                 entity.hurt(level.damageSources().inFire(), 100F);
             } else if (entity instanceof LivingEntity) {
-                entity.hurt(level.damageSources().hotFloor(), 1.0F);
+                entity.hurt(level.damageSources().campfire(), 1.0F);
             }
         }
         super.stepOn(level, pos, state, entity);
