@@ -39,8 +39,9 @@ public class CustomSkinManager {
     public static void onPlayerLogin(ClientPlayerNetworkEvent.LoggingIn event) {
         new Thread(() -> {
             try {
-                Thread.sleep(1000);
+                Thread.sleep(2000);
             } catch (Exception ignored) {}
+
             Minecraft.getInstance().execute(() -> {
                 loadedSkinPath = "";
                 loadedCapePath = "";
