@@ -29,11 +29,16 @@ public class MusicScreen extends Screen {
     protected void init() {
         int btnWidth = 100;
         int btnHeight = 20;
-        int leftCol = this.width / 2 - 155;
+        int spacing = 10;
+
         int midCol = this.width / 2 - 50;
-        int rightCol = this.width / 2 + 55;
-        int row1 = this.height / 2 - 175;
-        int row2 = this.height / 2 - 150;
+        int leftCol = midCol - btnWidth - spacing;
+        int rightCol = midCol + btnWidth + spacing;
+
+        int row1 = 60;
+        int row2 = row1 + btnHeight + 5;
+        int stopRow = row2 + btnHeight + 5;
+        int volumeRow = stopRow + btnHeight + 5;
 
         this.nrjButton = Button.builder(Component.literal("NRJ"), button -> {
             RadioManager.play("https://streaming.nrjaudio.fm/oumvmk8fnozc", "NRJ");
@@ -74,10 +79,10 @@ public class MusicScreen extends Screen {
         this.stopButton = Button.builder(Component.translatable("iyc.music.stop"), button -> {
             RadioManager.stop();
             updateButtons();
-        }).bounds(this.width / 2 - 50, this.height / 2 - 125, 100, 20).build();
+        }).bounds(midCol, stopRow, btnWidth, btnHeight).build();
         this.addRenderableWidget(this.stopButton);
 
-        this.volumeSlider = new AbstractSliderButton(this.width / 2 - 50, this.height / 2 - 100, 100, 20, Component.translatable("iyc.music.volume", (int)(RadioManager.getVolume() * 100)), RadioManager.getVolume()) {
+        this.volumeSlider = new AbstractSliderButton(midCol, volumeRow, btnWidth, btnHeight, Component.translatable("iyc.music.volume", (int)(RadioManager.getVolume() * 100)), RadioManager.getVolume()) {
             @Override
             protected void updateMessage() {
                 this.setMessage(Component.translatable("iyc.music.volume", (int) (this.value * 100)));
@@ -92,7 +97,7 @@ public class MusicScreen extends Screen {
 
         this.addRenderableWidget(Button.builder(Component.translatable("iyc.music.done"), button -> {
             this.minecraft.setScreen(null);
-        }).bounds(this.width / 2 - 60, this.height - 40, 120, 20).build());
+        }).bounds(this.width / 2 - 60, this.height - 30, 120, 20).build());
 
         updateButtons();
     }
