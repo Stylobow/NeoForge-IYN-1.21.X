@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="iyc_logo.png" alt="Imagine Your Craft Logo" width="250">
+  <img src="src/main/resources/iyc_logo.png" alt="Imagine Your Craft Logo" width="250">
 </p>
 
 <h1 align="center">Imagine Your Craft (IYC)</h1>

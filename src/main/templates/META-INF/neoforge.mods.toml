@@ -36,13 +36,13 @@ displayName="${mod_name}" #mandatory
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 
 # A file name (in the root of the mod JAR) containing a logo for display
-#logoFile="examplemod.png" #optional
+logoFile="iyc_logo.png"
 
 # A text field displayed in the mod UI
-#credits="" #optional
+credits="All third-party textures used (including those from Imagine Your Craft) remain the property of their respective owners."
 
 # The authors of the mod, displayed in the mod UI (optional)
-#authors=""
+authors="Stylobow"
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
