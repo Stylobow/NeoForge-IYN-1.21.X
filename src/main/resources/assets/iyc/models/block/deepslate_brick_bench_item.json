@@ -1,5 +1,5 @@
 {
-    "parent": "iyc:block/deepslate_brick_bench_item",
+    "parent": "block/block",
     "textures": {
         "texture": "minecraft:block/deepslate_bricks"
     },

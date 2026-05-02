@@ -4,7 +4,7 @@
   "group": "iyc:iron_fence",
   "key": {
     "#": {
-      "item": "iyc:white_iron_block"
+      "item": "minecraft:iron_block"
     },
     "S": {
       "item": "iyc:stone_stick"

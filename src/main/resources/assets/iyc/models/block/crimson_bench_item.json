@@ -1,5 +1,5 @@
 {
-    "parent": "iyc:block/crimson_bench_item",
+    "parent": "block/block",
     "textures": {
         "texture": "minecraft:block/crimson_planks"
     },

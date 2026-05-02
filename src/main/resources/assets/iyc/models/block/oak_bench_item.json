@@ -1,5 +1,5 @@
 {
-    "parent": "iyc:block/oak_bench_item",
+    "parent": "block/block",
     "textures": {
         "texture": "minecraft:block/oak_planks"
     },

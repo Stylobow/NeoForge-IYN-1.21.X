@@ -1,5 +1,5 @@
 {
-    "parent": "iyc:block/acacia_bench_item",
+    "parent": "block/block",
     "textures": {
         "texture": "minecraft:block/acacia_planks"
     },

@@ -8,7 +8,7 @@
       "y": 90
     },
     "facing=south": {
-      "model": "iyc:block/mangrove",
+      "model": "iyc:block/mangrove_shelf",
       "y": 180
     },
     "facing=west": {
