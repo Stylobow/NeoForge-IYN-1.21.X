@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "iyc:planks_wall",
   "key": {
     "#": {
       "item": "minecraft:jungle_planks"

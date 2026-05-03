@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "iyc:steel_block"
+    }
+  },
+  "pattern": [
+    "X"
+  ],
+  "result": {
+    "count": 9,
+    "id": "iyc:steel_ingot"
+  }
+}

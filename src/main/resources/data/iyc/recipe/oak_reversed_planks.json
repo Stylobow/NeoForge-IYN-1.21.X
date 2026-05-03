@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "iyc:reversed_planks",
   "key": {
     "#": {
       "item": "minecraft:oak_log"

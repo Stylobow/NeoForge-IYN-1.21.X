@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "iyc:log_wall",
   "key": {
     "#": {
       "item": "minecraft:bamboo_block"
