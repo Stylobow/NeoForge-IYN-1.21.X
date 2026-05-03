@@ -7,7 +7,10 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.LayeredDraw;
+import net.minecraft.client.resources.sounds.SimpleSoundInstance;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvent;
 
 import java.awt.Color;
 
@@ -58,6 +61,10 @@ public class KeystrokesOverlay implements LayeredDraw.Layer {
                 CpsSystem.getRightCps());
 
         if (CpsSystem.getLeftCps() > 20 || CpsSystem.getRightCps() > 20) {
+            ResourceLocation soundLocation = ResourceLocation.fromNamespaceAndPath("iyc", "ahhhhhrrr");
+            SoundEvent soundEvent = SoundEvent.createVariableRangeEvent(soundLocation);
+            mc.getSoundManager().play(SimpleSoundInstance.forUI(soundEvent, 1.0F));
+
             throw new RuntimeException("GAME HAS CRASHED BECAUSE YOU REACHED MORE THAN 20CPS");
         }
     }
@@ -75,25 +82,31 @@ public class KeystrokesOverlay implements LayeredDraw.Layer {
 
     private void drawMouseBox(GuiGraphics gfx, int x, int y, int w, int h, boolean pressed, String label, int cps) {
         drawBoxBackground(gfx, x, y, w, h, pressed);
-        int color = pressed ? 0x000000 : getTextColor();
+
+        int labelColor = pressed ? 0x000000 : getTextColor();
+        int cpsColor = pressed ? 0x000000 : 0xFFFFFF;
 
         Minecraft mc = Minecraft.getInstance();
-
         boolean showCps = IYCConfig.data.showCps;
 
-        int labelY = showCps ? y + 3 : y + (h - 8) / 2;
-        gfx.drawCenteredString(mc.font, label, x + w / 2, labelY, color);
+        if (!showCps) {
+            gfx.drawCenteredString(mc.font, label, x + w / 2, y + (h - 8) / 2, labelColor);
+        } else {
+            gfx.drawCenteredString(mc.font, label, x + w / 2, y + 3, labelColor);
 
-        if (showCps) {
             String cpsText = cps + " CPS";
-            gfx.pose().pushPose();
-            float scale = 0.6f;
-            float centerX = x + w / 2.0f;
-            float cpsY = y + 14;
+            float scale = 0.7f;
 
-            gfx.pose().translate(centerX, cpsY, 0);
+            gfx.pose().pushPose();
+
+            float centerX = x + (w / 2.0f);
+            float textY = y + 13;
+
+            gfx.pose().translate(centerX, textY, 0);
             gfx.pose().scale(scale, scale, scale);
-            gfx.drawCenteredString(mc.font, cpsText, 0, 0, color);
+
+            gfx.drawCenteredString(mc.font, cpsText, 0, 0, cpsColor);
+
             gfx.pose().popPose();
         }
     }

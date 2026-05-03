@@ -36,7 +36,13 @@ public class CustomScreen extends Screen {
             IYCConfig.data.showKeystrokes = !IYCConfig.data.showKeystrokes;
             IYCConfig.save();
             btn.setMessage(getKeystrokesText());
-        }).bounds(centerX - 100, 45, 200, btnH).build());
+        }).bounds(centerX - 155, 45, btnW, btnH).build());
+
+        this.addRenderableWidget(Button.builder(getCpsText(), (btn) -> {
+            IYCConfig.data.showCps = !IYCConfig.data.showCps;
+            IYCConfig.save();
+            btn.setMessage(getCpsText());
+        }).bounds(centerX + 5, 45, btnW, btnH).build());
 
         this.addRenderableWidget(Button.builder(getPositionText(), (btn) -> {
             IYCConfig.HudPosition current = IYCConfig.data.keystrokesPosition;
@@ -131,6 +137,12 @@ public class CustomScreen extends Screen {
         boolean isOn = IYCConfig.data.showKeystrokes;
         Component state = Component.literal(isOn ? "ON" : "OFF").withStyle(isOn ? ChatFormatting.GREEN : ChatFormatting.RED);
         return Component.translatable("iyc.hud.keystrokes", state);
+    }
+
+    private Component getCpsText() {
+        boolean isOn = IYCConfig.data.showCps;
+        Component state = Component.literal(isOn ? "ON" : "OFF").withStyle(isOn ? ChatFormatting.GREEN : ChatFormatting.RED);
+        return Component.literal("CPS: ").append(state);
     }
 
     private Component getPositionText() {
