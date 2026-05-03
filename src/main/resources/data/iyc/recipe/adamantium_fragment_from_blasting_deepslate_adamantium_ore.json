@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "adamantium",
+  "ingredient": {
+    "item": "iyc:deepslate_adamantium_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "iyc:adamantium_fragment"
+  }
+}
