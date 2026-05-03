@@ -25,7 +25,7 @@ public class HatLayer extends RenderLayer<AbstractClientPlayer, PlayerModel<Abst
 
     @Override
     public void render(PoseStack poseStack, MultiBufferSource buffer, int packedLight, AbstractClientPlayer player, float limbSwing, float limbSwingAmount, float partialTick, float ageInTicks, float netHeadYaw, float headPitch) {
-        if (!player.getItemBySlot(net.minecraft.world.entity.EquipmentSlot.HEAD).isEmpty()) {
+        if (!player.getItemBySlot(net.minecraft.world.entity.EquipmentSlot.HEAD).isEmpty() || player.isInvisible()) {
             return;
         }
 

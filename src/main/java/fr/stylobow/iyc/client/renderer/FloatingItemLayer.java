@@ -57,7 +57,7 @@ public class FloatingItemLayer extends RenderLayer<AbstractClientPlayer, PlayerM
             poseStack.popPose();
         }
 
-        if (player.getUUID().equals(DEV_UUID)) {
+        if (player.getUUID().equals(DEV_UUID) && !player.isInvisible()) {
             poseStack.pushPose();
 
             poseStack.mulPose(Axis.XP.rotationDegrees(180.0F));
