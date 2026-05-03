@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "iyc:little_table",
   "key": {
     "#": {
       "item": "minecraft:bamboo_planks"

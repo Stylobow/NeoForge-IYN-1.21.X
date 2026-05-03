@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "iyc:slopes",
   "key": {
     "#": {
       "item": "minecraft:acacia_log"

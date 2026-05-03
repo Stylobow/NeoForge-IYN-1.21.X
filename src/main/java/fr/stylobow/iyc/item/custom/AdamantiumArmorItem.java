@@ -26,7 +26,7 @@ public class AdamantiumArmorItem extends ArmorItem {
         if (!level.isClientSide() && entity instanceof Player player) {
             if (stack.getItem() == player.getItemBySlot(EquipmentSlot.HEAD).getItem()) {
                 if (hasFullSet(player)) {
-                    player.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 1, 0, false, false, false));
+                    player.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 1, 1, false, false, false));
                 }
             }
         }

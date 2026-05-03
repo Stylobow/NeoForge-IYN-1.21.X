@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "iyc:bench",
   "key": {
     "#": {
       "item": "minecraft:crimson_planks"
