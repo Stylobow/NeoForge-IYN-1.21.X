@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "iyc:netherrack_slab",
+    "iyc:oak_reversed_planks_slab",
+    "iyc:obsidian_slab",
+    "iyc:oak_log_slab",
+    "iyc:glowstone_slab",
+    "iyc:slate_slab",
+    "iyc:glass_slab",
+    "iyc:white_wool_slab",
+    "iyc:orange_wool_slab",
+    "iyc:magenta_wool_slab",
+    "iyc:light_blue_wool_slab",
+    "iyc:yellow_wool_slab",
+    "iyc:lime_wool_slab",
+    "iyc:pink_wool_slab",
+    "iyc:gray_wool_slab",
+    "iyc:light_gray_wool_slab",
+    "iyc:cyan_wool_slab",
+    "iyc:purple_wool_slab",
+    "iyc:blue_wool_slab",
+    "iyc:brown_wool_slab",
+    "iyc:green_wool_slab",
+    "iyc:red_wool_slab",
+    "iyc:black_wool_slab"
+  ]
+}
