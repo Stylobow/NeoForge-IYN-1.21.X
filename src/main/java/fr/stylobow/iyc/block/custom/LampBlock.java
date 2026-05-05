@@ -5,6 +5,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -17,6 +18,9 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.BushBlock;
+import net.minecraft.world.level.block.FlowerBlock;
+import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -75,7 +79,15 @@ public class LampBlock extends Block {
     }
 
     private boolean canConnect(BlockState state) {
-        return state.getBlock() instanceof LampBlock || state.getBlock() instanceof RodBlock || state.isSolidRender(null, null);
+        Block block = state.getBlock();
+
+        if (block instanceof RodBlock || block instanceof LampBlock || block instanceof WallBlock) {
+            return true;
+        }
+        if (block instanceof FlowerBlock || state.is(BlockTags.FLOWERS) || block instanceof BushBlock) {
+            return false;
+        }
+        return state.isSolid();
     }
 
     @Override
