@@ -2,7 +2,6 @@ package fr.stylobow.iyc.event;
 
 import fr.stylobow.iyc.ImagineYourCraft;
 import fr.stylobow.iyc.attachment.ModAttachmentTypes;
-import fr.stylobow.iyc.network.SyncCosmeticPayload;
 import fr.stylobow.iyc.network.SkinSyncPayload;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;
@@ -15,38 +14,10 @@ import net.neoforged.neoforge.network.PacketDistributor;
 public class PlayerSyncEvents {
 
     @SubscribeEvent
-    public static void onPlayerJoin(PlayerEvent.PlayerLoggedInEvent event) {
-        syncPlayerSelf(event.getEntity());
-    }
-
-    @SubscribeEvent
-    public static void onPlayerRespawn(PlayerEvent.PlayerRespawnEvent event) {
-        syncPlayerSelf(event.getEntity());
-    }
-
-    @SubscribeEvent
-    public static void onPlayerChangeDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
-        syncPlayerSelf(event.getEntity());
-    }
-
-    private static void syncPlayerSelf(Player entity) {
-        if (entity instanceof ServerPlayer player) {
-            String cosmetic = player.getData(ModAttachmentTypes.ACTIVE_COSMETIC);
-            if (!cosmetic.isEmpty()) {
-                PacketDistributor.sendToPlayer(player, new SyncCosmeticPayload(player.getId(), cosmetic));
-            }
-        }
-    }
-
-    @SubscribeEvent
     public static void onStartTracking(PlayerEvent.StartTracking event) {
         if (event.getTarget() instanceof Player trackedPlayer) {
-            String cosmetic = trackedPlayer.getData(ModAttachmentTypes.ACTIVE_COSMETIC);
 
             if (event.getEntity() instanceof ServerPlayer trackingPlayer) {
-                if (!cosmetic.isEmpty()) {
-                    PacketDistributor.sendToPlayer(trackingPlayer, new SyncCosmeticPayload(trackedPlayer.getId(), cosmetic));
-                }
 
                 if (trackedPlayer instanceof ServerPlayer targetServerPlayer) {
                     byte[] skin = targetServerPlayer.getData(ModAttachmentTypes.SKIN_DATA);

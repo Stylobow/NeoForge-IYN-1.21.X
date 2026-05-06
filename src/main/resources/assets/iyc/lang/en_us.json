@@ -651,12 +651,5 @@
   "item.iyc.record_dont_mine_at_night": "Music Disc",
   "subtitles.iyc.record_girl_crafty": "TryHardNinja - That Girl is Crafty",
   "item.iyc.record_girl_crafty.desc": "TryHardNinja - That Girl is Crafty",
-  "item.iyc.record_girl_crafty": "Music Disc",
-
-  "command.iyc.cosmetic.nocosmetic": "%s is not wearing any cosmetic!",
-  "command.iyc.cosmetic.removed": "%s is no longer wearing any cosmetics.",
-  "command.iyc.cosmetic.success": "Cosmetic '%s' applied to %s",
-  "command.iyc.cosmetic.already_worn": "%s is already wearing this cosmetic!",
-  "command.iyc.cosmetic.notfound": "Cosmetic '%s' does not exist!",
-  "command.iyc.cosmetic.clear_success": "All cosmetics for %s have been removed"
+  "item.iyc.record_girl_crafty": "Music Disc"
 }

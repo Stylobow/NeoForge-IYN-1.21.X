@@ -652,11 +652,4 @@
   "subtitles.iyc.record_girl_crafty": "TryHardNinja - That Girl is Crafty",
   "item.iyc.record_girl_crafty.desc": "TryHardNinja - That Girl is Crafty",
   "item.iyc.record_girl_crafty": "Disque",
-
-  "command.iyc.cosmetic.nocosmetic": "%s ne porte aucun cosmétique !",
-  "command.iyc.cosmetic.removed": "%s ne porte désormais plus de cosmétiques.",
-  "command.iyc.cosmetic.success": "Cosmétique '%s' appliqué à %s",
-  "command.iyc.cosmetic.already_worn": "%s porte déjà ce cosmétique !",
-  "command.iyc.cosmetic.notfound": "Le cosmétique '%s' n'existe pas !",
-  "command.iyc.cosmetic.clear_success": "Tous les cosmétiques de %s ont été retirés"
 }

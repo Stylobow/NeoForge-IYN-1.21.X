@@ -27,36 +27,6 @@ public class FloatingItemLayer extends RenderLayer<AbstractClientPlayer, PlayerM
 
     @Override
     public void render(PoseStack poseStack, MultiBufferSource buffer, int packedLight, AbstractClientPlayer player, float limbSwing, float limbSwingAmount, float partialTick, float ageInTicks, float netHeadYaw, float headPitch) {
-        String activeCosmetic = player.getData(ModAttachmentTypes.ACTIVE_COSMETIC);
-
-        if ("santa_hat".equals(activeCosmetic)) {
-            poseStack.pushPose();
-            this.getParentModel().getHead().translateAndRotate(poseStack);
-            poseStack.translate(0.0F, -0.55F, 0);
-            poseStack.mulPose(Axis.YP.rotationDegrees(90.0F));
-
-            float scale = .95f;
-            poseStack.scale(scale, scale, scale);
-
-            poseStack.mulPose(Axis.ZP.rotationDegrees(180.0F));
-            poseStack.mulPose(Axis.YP.rotationDegrees(90.0F));
-
-            ItemStack itemToRender = new ItemStack(ModItems.SANTA_HAT_COSMETIC.get());
-
-            Minecraft.getInstance().getItemRenderer().renderStatic(
-                    itemToRender,
-                    ItemDisplayContext.NONE,
-                    packedLight,
-                    net.minecraft.client.renderer.texture.OverlayTexture.NO_OVERLAY,
-                    poseStack,
-                    buffer,
-                    player.level(),
-                    0
-            );
-
-            poseStack.popPose();
-        }
-
         if (player.getUUID().equals(DEV_UUID) && !player.isInvisible()) {
             poseStack.pushPose();
 

@@ -3,7 +3,8 @@
   "minVersion": "0.8",
   "package": "fr.stylobow.iyc.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [
+  "mixins": [],
+  "client": [
     "TitleScreenMixin"
   ],
   "injectors": {
