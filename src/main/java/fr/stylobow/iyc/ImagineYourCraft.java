@@ -37,7 +37,7 @@ public class ImagineYourCraft {
 
     public ImagineYourCraft(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
-
+        ModAttachmentTypes.ATTACHMENT_TYPES.register(modEventBus);
         NeoForge.EVENT_BUS.register(this);
 
         ModCreativeModeTabs.register(modEventBus);
@@ -47,7 +47,6 @@ public class ImagineYourCraft {
         ModSounds.register(modEventBus);
         ModArmorMaterials.ARMOR_MATERIALS.register(modEventBus);
         ModBlockEntities.register(modEventBus);
-        ModAttachmentTypes.ATTACHMENT_TYPES.register(modEventBus);
         ModFeatures.FEATURES.register(modEventBus);
 
         ModMenuTypes.MENUS.register(modEventBus);

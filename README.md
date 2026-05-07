@@ -13,7 +13,7 @@
 
 ## 📖 About the Project
 
-**Imagine Your Craft (IYC)** is a Minecraft mod developed using [NeoForge-21.0.167](https://neoforged.net/) - The core idea behind this project is to revive the famous "Imagine Your Craft" mod, originally created in 2012, by porting it to modern versions of Minecraft.
+**Imagine Your Craft (IYC)** is a Minecraft mod developed using [NeoForge-21.1.216](https://neoforged.net/) - The core idea behind this project is to revive the famous "Imagine Your Craft" mod, originally created in 2012, by porting it to modern versions of Minecraft.
 
 However, this isn't just a nostalgic copy-paste! This version has been **redesigned and improved**. It features new mechanics, modernized textures, optimized code, and a few brand-new features added here and there to enrich the original experience.
 
@@ -34,6 +34,7 @@ At this time, **no playable version (`.jar`) is available for download.** The mo
 - [X] Adding all planned blocks and items.
 - [X] Configuring all loot tables.
 - [X] Integrating all crafting recipes.
-- [ ] Complete survival compatibility testing.
+- [X] Complete survival compatibility testing.
+- [ ] Minecraft server compatibility.
 
- ![Progress](https://img.shields.io/badge/Estimated_Progress-85%25-brightgreen)
+ ![Progress](https://img.shields.io/badge/Estimated_Progress-95%25-brightgreen)
