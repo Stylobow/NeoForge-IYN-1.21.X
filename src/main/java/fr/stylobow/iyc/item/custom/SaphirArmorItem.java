@@ -1,21 +1,23 @@
 package fr.stylobow.iyc.item.custom;
 
 import net.minecraft.ChatFormatting;
+import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.*;
-import net.minecraft.core.Holder;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class TopazeArmorItem extends ArmorItem {
-    public TopazeArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {
+public class SaphirArmorItem extends ArmorItem {
+    public SaphirArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {
         super(material, type, properties);
     }
 
@@ -24,7 +26,7 @@ public class TopazeArmorItem extends ArmorItem {
         if (!level.isClientSide() && entity instanceof Player player) {
             if (stack.getItem() == player.getItemBySlot(EquipmentSlot.HEAD).getItem()) {
                 if (hasFullSet(player)) {
-                    player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 1, 0, false, false, false));
+                    player.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 1, 0, false, false, false));
                 }
             }
         }
@@ -33,7 +35,7 @@ public class TopazeArmorItem extends ArmorItem {
     private boolean hasFullSet(Player player) {
         for (ItemStack armorStack : player.getArmorSlots()) {
             if (armorStack.isEmpty() || !(armorStack.getItem() instanceof ArmorItem armorItem) ||
-                    !armorItem.getMaterial().getRegisteredName().equals("iyc:topaze")) {
+                    !armorItem.getMaterial().getRegisteredName().equals("iyc:saphir")) {
                 return false;
             }
         }
@@ -49,7 +51,7 @@ public class TopazeArmorItem extends ArmorItem {
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         tooltipComponents.add(
                 Component.literal("Set magique: ").withStyle(ChatFormatting.GOLD, ChatFormatting.ITALIC).
-                        append(Component.literal("Vision Nocturne").withStyle(ChatFormatting.AQUA, ChatFormatting.ITALIC))
+                        append(Component.literal("Apnée").withStyle(ChatFormatting.AQUA, ChatFormatting.ITALIC))
         );
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }

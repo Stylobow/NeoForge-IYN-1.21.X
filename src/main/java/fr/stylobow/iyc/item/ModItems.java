@@ -142,10 +142,10 @@ public class ModItems {
             () -> new ShovelItem(ModTiers.SAPHIR, new Item.Properties().attributes(ShovelItem.createAttributes(ModTiers.SAPHIR, 1.5F, -3.0F))));
     public static final DeferredItem<Item> SAPHIR_HOE = ITEMS.register("saphir_hoe",
             () -> new HoeItem(ModTiers.SAPHIR, new Item.Properties().attributes(HoeItem.createAttributes(ModTiers.SAPHIR, -3, -1.0F))));
-    public static final DeferredItem<Item> SAPHIR_HELMET = ITEMS.register("saphir_helmet", () -> new ArmorItem(ModArmorMaterials.SAPHIR, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(34))));
-    public static final DeferredItem<Item> SAPHIR_CHESTPLATE = ITEMS.register("saphir_chestplate", () -> new ArmorItem(ModArmorMaterials.SAPHIR, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(34))));
-    public static final DeferredItem<Item> SAPHIR_LEGGINGS = ITEMS.register("saphir_leggings", () -> new ArmorItem(ModArmorMaterials.SAPHIR, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(34))));
-    public static final DeferredItem<Item> SAPHIR_BOOTS = ITEMS.register("saphir_boots", () -> new ArmorItem(ModArmorMaterials.SAPHIR, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(34))));
+    public static final DeferredItem<Item> SAPHIR_HELMET = ITEMS.register("saphir_helmet", () -> new SaphirArmorItem(ModArmorMaterials.SAPHIR, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(34))));
+    public static final DeferredItem<Item> SAPHIR_CHESTPLATE = ITEMS.register("saphir_chestplate", () -> new SaphirArmorItem(ModArmorMaterials.SAPHIR, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(34))));
+    public static final DeferredItem<Item> SAPHIR_LEGGINGS = ITEMS.register("saphir_leggings", () -> new SaphirArmorItem(ModArmorMaterials.SAPHIR, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(34))));
+    public static final DeferredItem<Item> SAPHIR_BOOTS = ITEMS.register("saphir_boots", () -> new SaphirArmorItem(ModArmorMaterials.SAPHIR, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(34))));
 
     public static final DeferredItem<Item> RUBIS_SWORD = ITEMS.register("rubis_sword",
             () -> new SwordItem(ModTiers.RUBIS, new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.RUBIS, 3, -2.4F))));
