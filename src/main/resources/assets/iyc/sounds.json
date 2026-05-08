@@ -238,5 +238,15 @@
         "stream": true
       }
     ]
+  },
+  "mariosound": {
+    "category": "player",
+    "subtitle": "iyc.mariosound",
+    "sounds": [
+      {
+        "name": "iyc:mariosound",
+        "stream": true
+      }
+    ]
   }
 }
