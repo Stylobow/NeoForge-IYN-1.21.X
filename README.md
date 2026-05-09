@@ -13,28 +13,52 @@
 
 ## 📖 About the Project
 
-**Imagine Your Craft (IYC)** is a Minecraft mod developed using [NeoForge-21.1.216](https://neoforged.net/) - The core idea behind this project is to revive the famous "Imagine Your Craft" mod, originally created in 2012, by porting it to modern versions of Minecraft.
+**Imagine Your Craft (IYC)** is a Minecraft mod developed for **NeoForge 1.21.1**. The core idea behind this project is to revive the famous "Imagine Your Craft" mod, originally created in 2012, by porting it to modern versions of Minecraft.
 
-However, this isn't just a nostalgic copy-paste! This version has been **redesigned and improved**. It features new mechanics, modernized textures, optimized code, and a few brand-new features added here and there to enrich the original experience.
+This isn't just a nostalgic copy! This version has been **fully redesigned**. It features modernized textures, optimized code, and new features to enrich the original experience while keeping the 2012 soul alive.
 
-*Please note that the mod is only available in English and French. As the mod developer is French, translation errors may occur. Thank you for your understanding.*
+*Note: The mod is available in English and French. As the developer is French, please excuse any minor translation errors.*
 
-### ✨ Features (Work in Progress)
-* **New Ores & Materials:** Topaze, Rubis, Saphire, Adamantium, etc.
-* **Decorative & Colored Blocks:** Optimized colored iron blocks, multicolored redstone lamps, and much more...
-* **Furniture Blocks:** Chairs, Tables, Stools, Benches… have been created and are usable in all types of wood.
-* **Custom Interface (HUD):** Fully integrated and optimized in-game Keystrokes (CPS) system, Custom Skin/Capes/HAT HD supported and some cool features.
+## ✨ Key Features
+*   **Classic Ores & Materials:** Rubis, Saphir, Topaze, Adamantium, Lignite, Steel.
+*   **Dynamic Decoration:** Colored iron blocks, multicolored redstone lamps, and unique furniture (Chairs, Tables, Stools) in all wood types.
+*   **Advanced HUD:** Fully integrated HUD system to customize your player.
+*   **Cosmetic Support:** HD Skins, Capes, and Hats support.
+
 ---
 
-## ⚠️ Development Status
+## 🚀 Installation & Status
 
-**This project is currently an active Work In Progress (WIP).**
+**The 1.0.0 Release is now available!**
 
-At this time, **no playable version (`.jar`) is available for download.** The mod will only be officially published in its 1.0 (Release) version once all the content is finished and stable. This includes:
-- [X] Adding all planned blocks and items.
-- [X] Configuring all loot tables.
-- [X] Integrating all crafting recipes.
-- [X] Complete survival compatibility testing.
-- [ ] Minecraft server compatibility.
+1.  Download the latest `.jar` from the [Releases](https://github.com/Stylobow/ImagineYourCraft-1.21.1-NeoForge/releases) tab.
+2.  Install [NeoForge](https://neoforged.net/) for Minecraft 1.21.1 (21.1.216).
+3.  Place the mod file in your `%appdata%/.minecraft/mods` folder.
 
- ![Progress](https://img.shields.io/badge/Estimated_Progress-95%25-brightgreen)
+![Status](https://img.shields.io/badge/Status-Released-brightgreen)
+![Version](https://img.shields.io/badge/Minecraft-1.21.1-orange)
+![Loader](https://img.shields.io/badge/Loader-NeoForge-blue)
+
+---
+
+## 🐞 Bug Reports & Feedback
+
+*  **Players cannot see other players' custom skins when the mod is connected to a server**
+
+Even though the mod is in its stable version, bugs can happen! 
+
+If you encounter a crash, a glitch, or have a suggestion:
+*   **Open an Issue:** Use the "Issues" tab here on GitHub.
+*   **Contact me on Discord:** **Stylobow** (Fastest way to get help).
+
+When reporting a bug, please provide your **logs** or a **screenshot** to help me fix it faster!
+
+---
+
+## 🛠️ Credits
+*   **Original Mod (2012):** IYC Team.
+*   **Remake & Code:** Stylobow.
+*   **Powered by:** NeoForge.
+
+---
+<p align="center"><em>Thank you for playing Imagine Your Craft!</em></p>
